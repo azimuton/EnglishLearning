@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:alpha="0.5"
-    android:background="@drawable/pattern_texture1">
+    android:background="@color/purple_700">
 
     <TextView
         android:id="@+id/tvWord"
@@ -17,7 +17,7 @@
         android:padding="4dp"
         android:text="Redemption"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,13 +31,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:padding="4dp"
         android:text="искупление, спасение"
-        android:textColor="#BE063907"
-        android:textSize="20sp"
+        android:textColor="#BE3E0303"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
