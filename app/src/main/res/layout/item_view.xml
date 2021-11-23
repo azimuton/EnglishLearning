@@ -28,8 +28,8 @@
 
     <TextView
         android:id="@+id/tvTranslate"
-        android:layout_width="344dp"
-        android:layout_height="42dp"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
         app:layout_constraintEnd_toStartOf="@+id/ivDelete"
         app:layout_constraintTop_toTopOf="@+id/ivDelete"
-        app:srcCompat="@drawable/closeeyetwo" />
+        app:srcCompat="@mipmap/closeeyetwo" />
 
     <ImageView
         android:id="@+id/ivOpenEye"
@@ -78,5 +78,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
         app:layout_constraintEnd_toStartOf="@+id/ivCloseEye"
         app:layout_constraintTop_toTopOf="@+id/ivDelete"
-        app:srcCompat="@drawable/klipartz" />
+        app:srcCompat="@mipmap/klipartz" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.englishlearning.database.AppDatabase
 import com.jkdajac.englishlearning.database.Word
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_view.*
 
 class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback {
     lateinit var adapter: WordAdapter
@@ -19,10 +18,14 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //initSearchView()
 
         btClose.setOnClickListener {
             finishAffinity()
+        }
+
+        btLearnedWords.setOnClickListener {
+            val intent = Intent(this, LearnedWordsActivity :: class.java)
+            startActivity(intent)
         }
 
         getMyIntents()

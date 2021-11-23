@@ -140,6 +140,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/btClose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btClose"
-        app:layout_constraintTop_toTopOf="@+id/btClose" />
+        app:layout_constraintTop_toTopOf="@+id/btClose"  />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
