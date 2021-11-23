@@ -1,24 +1,16 @@
 package com.jkdajac.englishlearning
 
-import android.annotation.SuppressLint
-import android.app.SearchManager
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.Menu
-import android.view.View
-import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.englishlearning.database.AppDatabase
 import com.jkdajac.englishlearning.database.Word
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_view.*
-import java.util.Observer
 
-class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback, SearchView.OnQueryTextListener {
+class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback {
     lateinit var adapter: WordAdapter
     lateinit var wordDatabase: AppDatabase
     lateinit var wordList: ArrayList<Word>
@@ -99,67 +91,13 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback, S
             }
         }
     }
-
-    @SuppressLint("ResourceType")
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val search = R.id.searchView
-        //searchView = search.actionView as SearchView
-        searchView.isSubmitButtonEnabled = true
-        searchView.setOnQueryTextListener(object : android.widget.SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                if (query != null) {
-                    getItemsFromDb(query)
-                }
-                return true
             }
 
-            override fun onQueryTextChange(newText: String?): Boolean {
-                if (newText != null) {
-                    getItemsFromDb(newText)
-                }
-                return true
-            }
-
-        })
-        return true
-    }
+//    private fun getItemsFromDb(searchText: String) {
+//        var searchText = searchText
+//        searchText = "%$searchText%"
+//    }
 
 
 
-//    fun initSearchView(){
-//        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
-//            override fun onQueryTextSubmit(query: String?): Boolean {
-//                if (query != null) {
-//                    wordDatabase.wordDao().searchDatabase(query)
-//                }
-//                return false
-//            }
-//
-//            override fun onQueryTextChange(newText: String?): Boolean {
-//                if (newText != null) {
-//                    wordDatabase.wordDao().searchDatabase(newText)
-//                }
-//                return true
-//            }
-//        })
-   // }
-
-    override fun onQueryTextSubmit(query: String?): Boolean {
-        return false
-    }
-
-    override fun onQueryTextChange(newText: String?): Boolean {
-        if (newText != null) {
-            wordDatabase.wordDao().searchDatabase(newText)
-        }
-        return true
-    }
-
-    private fun getItemsFromDb(searchText: String) {
-        var searchText = searchText
-        searchText = "%$searchText%"
-    }
-
-
-}
 
