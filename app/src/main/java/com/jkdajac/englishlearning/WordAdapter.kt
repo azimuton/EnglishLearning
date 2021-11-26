@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -27,12 +28,14 @@ class WordAdapter(
         holder.setData(wordList[position])
         holder.englishWord?.text = wordList[position].englishWord
         holder.translateWord?.text = wordList[position].translateWord
-//        holder.closeItem?.setOnClickListener {
-//            callback.closeItem(position)
-//        }
-//        holder.openItem?.setOnClickListener {
-//            callback.openItem(position)
-//        }
+        holder.closeItem?.setOnClickListener {
+            callback.closeItem(position)
+            holder.translateWord?.visibility = View.GONE
+        }
+        holder.openItem?.setOnClickListener {
+            callback.openItem(position)
+            holder.translateWord?.visibility = View.VISIBLE
+        }
         holder.deleteItem?.setOnClickListener {
             callback.deleteItem(position)
 
@@ -50,20 +53,17 @@ class WordAdapter(
         var englishWord: TextView? = null
         var translateWord: TextView? = null
         var deleteItem : ImageView? = null
-//        var openItem : ImageView? = null
-//        var closeItem : ImageView? = null
+        var openItem : ImageView? = null
+        var closeItem : ImageView? = null
 
         init{
             englishWord = itemView.tvWord
             translateWord = itemView.tvTranslate
             deleteItem = itemView.ivDelete
-//            openItem = itemView.ivOpenTranslate
-//            closeItem = itemView.ivCloseTranslate
-
+            openItem = itemView.ivOpenEye
+            closeItem = itemView.ivCloseEye
         }
-
         fun setData(item : Word){
-
             itemView.setOnClickListener {
                 val intent = Intent(context,MainActivity :: class.java).apply {
                     putExtra(MyIntentConstance.I_WORD_KEY, item.englishWord)
@@ -71,17 +71,12 @@ class WordAdapter(
                 }
                 context.startActivity(intent)
             }
-
-
         }
 
         interface ItemCallback {
             fun deleteItem(index: Int)
-//            fun openItem(index : Int)
-//            fun closeItem(index : Int)
-
-
+            fun openItem(index : Int)
+            fun closeItem(index : Int)
         }
-
     }
 }

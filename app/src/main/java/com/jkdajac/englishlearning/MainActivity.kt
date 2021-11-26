@@ -9,7 +9,7 @@ import com.jkdajac.englishlearning.database.AppDatabase
 import com.jkdajac.englishlearning.database.Word
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback {
+class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     lateinit var adapter: WordAdapter
     lateinit var wordDatabase: AppDatabase
     lateinit var wordList: ArrayList<Word>
@@ -75,13 +75,14 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback {
         adapter.notifyDataSetChanged()
     }
 
-//    override fun openItem(index: Int) {
-//        tvTranslate.visibility = View.VISIBLE
-//    }
-//
-//    override fun closeItem(index: Int) {
-//        tvTranslate.visibility = View.GONE
-//    }
+
+    override fun openItem(index: Int) {
+        //tvTranslate.visibility = View.VISIBLE
+    }
+
+    override fun closeItem(index: Int) {
+        //tvTranslate.visibility = View.GONE
+    }
 
     fun getMyIntents(){
 
