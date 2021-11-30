@@ -6,9 +6,8 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.englishlearning.adapters.LearnedWordsAdapter
 import com.jkdajac.englishlearning.adapters.WordAdapter
-import com.jkdajac.englishlearning.database.lernedwordsdb.AppDatabaseLearned
-import com.jkdajac.englishlearning.database.lernedwordsdb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
+import com.jkdajac.englishlearning.database.worddb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.activity_learned_words.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,8 +15,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder.ItemCallback {
 
     lateinit var adapter: LearnedWordsAdapter
-    lateinit var learnedwordsDatabase: AppDatabaseLearned
-    lateinit var learnedwordsList: ArrayList<LearnedWords>
+    lateinit var wordDatabase: AppDatabase
+    lateinit var wordList: ArrayList<LearnedWords>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,26 +33,27 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
         getMyIntents()
 
-        learnedwordsList = ArrayList<LearnedWords>()
-        learnedwordsDatabase = AppDatabaseLearned.getDatabase(this)
+        wordList = ArrayList<LearnedWords>()
+        wordDatabase = AppDatabase.getDatabase(this)
         getData()
-        adapter = LearnedWordsAdapter(this,learnedwordsList, this)
+        adapter = LearnedWordsAdapter(this, wordList, this)
         rvLernedWords.layoutManager = LinearLayoutManager(this)
         rvLernedWords.adapter = adapter
 
-        learnedwordsDatabase = AppDatabaseLearned.getDatabase(this)
+        wordDatabase = AppDatabase.getDatabase(this)
+
 
     }
 
     fun getData() {
-        val wordFromDb: List<LearnedWords> = learnedwordsDatabase.learnedwordsDao().getAll()
-        learnedwordsList.clear()
-        learnedwordsList.addAll(wordFromDb)
+        val wordFromDb: List<LearnedWords> = wordDatabase.learnedwordsDao().getAllLearnedWords()
+        wordList.clear()
+        wordList.addAll(wordFromDb)
     }
 
     override fun deleteItem(index: Int) {
-        val learnedwords = learnedwordsList.get(index)
-        learnedwordsDatabase.learnedwordsDao().deleteWord(learnedwords)
+        val learnedWords = wordList.get(index)
+        wordDatabase.learnedwordsDao().deleteLearnedWords(learnedWords)
         getData()
         adapter.notifyDataSetChanged()
     }

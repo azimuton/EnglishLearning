@@ -1,10 +1,10 @@
-package com.jkdajac.englishlearning.database.lernedwordsdb
+package com.jkdajac.englishlearning.database.worddb
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "learnedwords")
-class LearnedWords(
+@Entity(tableName = "newwords")
+class NewWords(
     val englishWord: String,
     val translateWord: String
 )

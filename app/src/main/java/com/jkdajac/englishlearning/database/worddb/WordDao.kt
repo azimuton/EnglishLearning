@@ -9,8 +9,8 @@ import androidx.room.*
         @Query("SELECT * FROM word")
         fun getAll(): List<Word>
 
-        @Query("INSERT INTO learnedwords IN learnedwords_database FROM word")
-        fun copy(): List<Word>
+        @Query("INSERT INTO learnedwords  SELECT * FROM word")
+        fun copy()
 
         @Insert
         fun insertWord(word: Word)

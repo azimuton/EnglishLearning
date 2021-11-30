@@ -13,3 +13,19 @@ class Word(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
 }
+
+@Entity(tableName = "learnedwords")
+class LearnedWords(
+    val englishWord: String,
+    val translateWord: String
+)
+
+{
+    @PrimaryKey(autoGenerate = true)
+    var id: Int = 0
+}
+
+
+
+
+

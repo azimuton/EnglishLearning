@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.item_view.view.*
 class WordAdapter(
     val contextA: Context,
     val wordList: List<Word>,
-    val callback: ViewHolder.ItemCallback
+    val callback: MainActivity
 ) : RecyclerView.Adapter<WordAdapter.ViewHolder>(){
 
 
@@ -62,8 +62,8 @@ class WordAdapter(
             englishWord = itemView.tvWord
             translateWord = itemView.tvTranslate
             deleteItem = itemView.ivDelete
-            openItem = itemView.ivOpenEye
-            closeItem = itemView.ivCloseEye
+            openItem = itemView.ivOpenEyeLearned
+            closeItem = itemView.ivCloseEyeLearned
         }
         fun setData(item : Word){
             itemView.setOnClickListener {

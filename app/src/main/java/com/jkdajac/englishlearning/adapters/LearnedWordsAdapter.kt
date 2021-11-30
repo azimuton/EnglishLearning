@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.englishlearning.LearnedWordsActivity
 import com.jkdajac.englishlearning.MyIntentConstance
 import com.jkdajac.englishlearning.R
-import com.jkdajac.englishlearning.database.lernedwordsdb.LearnedWords
-import kotlinx.android.synthetic.main.item_view.view.ivCloseEye
-import kotlinx.android.synthetic.main.item_view.view.ivOpenEye
+import com.jkdajac.englishlearning.database.worddb.LearnedWords
+import kotlinx.android.synthetic.main.item_view.view.ivCloseEyeLearned
+import kotlinx.android.synthetic.main.item_view.view.ivOpenEyeLearned
 import kotlinx.android.synthetic.main.item_view.view.tvTranslate
 import kotlinx.android.synthetic.main.item_view.view.tvWord
 import kotlinx.android.synthetic.main.learned_item_view.view.*
@@ -21,12 +21,12 @@ import kotlinx.android.synthetic.main.learned_item_view.view.*
 class LearnedWordsAdapter(
     val contextA: Context,
     val wordListtwo: List<LearnedWords>,
-    val callback: LearnedWordsAdapter.ViewHolder.ItemCallback
+    val callback: ViewHolder.ItemCallback
 ) : RecyclerView.Adapter<LearnedWordsAdapter.ViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(contextA).inflate(R.layout.item_view, parent, false), contextA)
+        return ViewHolder(LayoutInflater.from(contextA).inflate(R.layout.learned_item_view, parent, false), contextA)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -34,11 +34,11 @@ class LearnedWordsAdapter(
         holder.englishWord?.text = wordListtwo[position].englishWord
         holder.translateWord?.text = wordListtwo[position].translateWord
         holder.closeItem?.setOnClickListener {
-            callback.closeItem(position)
+            //callback.closeItem(position)
             holder.translateWord?.visibility = View.GONE
         }
         holder.openItem?.setOnClickListener {
-            callback.openItem(position)
+            //callback.openItem(position)
             holder.translateWord?.visibility = View.VISIBLE
         }
         holder.deleteItem?.setOnClickListener {
@@ -65,8 +65,8 @@ class LearnedWordsAdapter(
             englishWord = itemView.tvWord
             translateWord = itemView.tvTranslate
             deleteItem = itemView.ivTwoDel
-            openItem = itemView.ivOpenEye
-            closeItem = itemView.ivCloseEye
+            openItem = itemView.ivOpenEyeLearned
+            closeItem = itemView.ivCloseEyeLearned
         }
         fun setData(item : LearnedWords){
             itemView.setOnClickListener {

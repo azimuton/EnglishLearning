@@ -62,7 +62,7 @@
         app:srcCompat="@mipmap/urna" />
 
     <ImageView
-        android:id="@+id/ivCloseEye"
+        android:id="@+id/ivCloseEyeLearned"
         android:layout_width="43dp"
         android:layout_height="37dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
@@ -71,12 +71,12 @@
         app:srcCompat="@mipmap/closeeyetwo" />
 
     <ImageView
-        android:id="@+id/ivOpenEye"
+        android:id="@+id/ivOpenEyeLearned"
         android:layout_width="43dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
-        app:layout_constraintEnd_toStartOf="@+id/ivCloseEye"
+        app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearned"
         app:layout_constraintTop_toTopOf="@+id/ivDelete"
         app:srcCompat="@mipmap/klipartz" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
 
 
                     val word = Word(englishWord = englishWord, translateWord = translateWord)
-                    Toast.makeText(this, "English word and translation full !", Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Поля заполнены!", Toast.LENGTH_LONG)
                         .show()
                     wordDatabase.wordDao().insertWord(word)
 
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                     startActivity(intent)
                 } else {
                     Toast.makeText(
-                        this, "Full in the fields" + "\"English word\"" + "and" + "\"Translate\"",
+                        this, "Заполните все поля!",
                         Toast.LENGTH_LONG
                     ).show()
                 }
