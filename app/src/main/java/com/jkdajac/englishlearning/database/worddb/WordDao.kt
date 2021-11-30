@@ -1,19 +1,19 @@
-package com.jkdajac.englishlearning.database
+package com.jkdajac.englishlearning.database.worddb
 
 import androidx.room.*
 
 
 
-    @Dao
+@Dao
     interface WordDao {
         @Query("SELECT * FROM word")
         fun getAll(): List<Word>
 
-        @Query("SELECT * FROM word WHERE englishWord LIKE :searchQuery ")
-        fun searchDatabase(searchQuery : String): List<Word>?
+        @Query("INSERT INTO learnedwords IN learnedwords_database FROM word")
+        fun copy(): List<Word>
 
         @Insert
-        fun insertWord(word:Word)
+        fun insertWord(word: Word)
 
         @Delete
         fun deleteWord(word : Word)

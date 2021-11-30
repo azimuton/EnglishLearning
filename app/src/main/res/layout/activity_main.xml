@@ -43,7 +43,7 @@
         android:background="@drawable/circle"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Enter english word"
+        android:hint="Введите слово"
         android:inputType="textMultiLine"
         android:padding="8dp"
         android:paddingStart="8dp"
@@ -65,7 +65,7 @@
         android:background="@drawable/circle"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Enter translate"
+        android:hint="Введите перевод"
         android:inputType="textMultiLine"
         android:padding="8dp"
         android:paddingStart="8dp"
@@ -88,7 +88,7 @@
         android:duplicateParentState="false"
         android:editable="false"
         android:ellipsize="none"
-        android:text="Save"
+        android:text="Сохранить"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -119,7 +119,7 @@
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/purple_700"
         android:padding="8dp"
-        android:text="Close"
+        android:text="Выход"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -133,14 +133,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:backgroundTint="@color/purple_700"
-        android:text="Already learned words"
+        android:text="Уже выученные слова"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btClose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btClose"
-        app:layout_constraintTop_toTopOf="@+id/btClose"  />
+        app:layout_constraintTop_toTopOf="@+id/btClose" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

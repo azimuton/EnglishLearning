@@ -1,15 +1,17 @@
-package com.jkdajac.englishlearning
+package com.jkdajac.englishlearning.adapters
 
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.jkdajac.englishlearning.database.Word
+import com.jkdajac.englishlearning.MainActivity
+import com.jkdajac.englishlearning.MyIntentConstance
+import com.jkdajac.englishlearning.R
+import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.item_view.view.*
 
 
@@ -65,7 +67,7 @@ class WordAdapter(
         }
         fun setData(item : Word){
             itemView.setOnClickListener {
-                val intent = Intent(context,MainActivity :: class.java).apply {
+                val intent = Intent(context, MainActivity :: class.java).apply {
                     putExtra(MyIntentConstance.I_WORD_KEY, item.englishWord)
                     putExtra(MyIntentConstance.I_TRANSLATE_KEY, item.translateWord)
                 }

@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.jkdajac.englishlearning.database.AppDatabase
-import com.jkdajac.englishlearning.database.Word
+import com.jkdajac.englishlearning.adapters.WordAdapter
+import com.jkdajac.englishlearning.database.worddb.AppDatabase
+import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
 
     override fun deleteItem(index: Int) {
         val word = wordList.get(index)
+        wordDatabase.wordDao().copy()
         wordDatabase.wordDao().deleteWord(word)
         getData()
         adapter.notifyDataSetChanged()
@@ -77,11 +79,11 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
 
 
     override fun openItem(index: Int) {
-        //tvTranslate.visibility = View.VISIBLE
+
     }
 
     override fun closeItem(index: Int) {
-        //tvTranslate.visibility = View.GONE
+        
     }
 
     fun getMyIntents(){
@@ -97,10 +99,6 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     }
             }
 
-//    private fun getItemsFromDb(searchText: String) {
-//        var searchText = searchText
-//        searchText = "%$searchText%"
-//    }
 
 
 

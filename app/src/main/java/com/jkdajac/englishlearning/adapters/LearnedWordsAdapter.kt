@@ -8,20 +8,20 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.jkdajac.englishlearning.MainActivity
+import com.jkdajac.englishlearning.LearnedWordsActivity
 import com.jkdajac.englishlearning.MyIntentConstance
 import com.jkdajac.englishlearning.R
-import com.jkdajac.englishlearning.database.WordTwo
+import com.jkdajac.englishlearning.database.lernedwordsdb.LearnedWords
 import kotlinx.android.synthetic.main.item_view.view.ivCloseEye
 import kotlinx.android.synthetic.main.item_view.view.ivOpenEye
 import kotlinx.android.synthetic.main.item_view.view.tvTranslate
 import kotlinx.android.synthetic.main.item_view.view.tvWord
-import kotlinx.android.synthetic.main.two_item_view.view.*
+import kotlinx.android.synthetic.main.learned_item_view.view.*
 
 class LearnedWordsAdapter(
     val contextA: Context,
-    val wordListtwo: List<WordTwo>,
-    val callback: MainActivity
+    val wordListtwo: List<LearnedWords>,
+    val callback: LearnedWordsAdapter.ViewHolder.ItemCallback
 ) : RecyclerView.Adapter<LearnedWordsAdapter.ViewHolder>(){
 
 
@@ -68,9 +68,9 @@ class LearnedWordsAdapter(
             openItem = itemView.ivOpenEye
             closeItem = itemView.ivCloseEye
         }
-        fun setData(item : WordTwo){
+        fun setData(item : LearnedWords){
             itemView.setOnClickListener {
-                val intent = Intent(context, MainActivity :: class.java).apply {
+                val intent = Intent(context, LearnedWordsActivity :: class.java).apply {
                     putExtra(MyIntentConstance.I_WORD_KEY, item.englishWord)
                     putExtra(MyIntentConstance.I_TRANSLATE_KEY, item.translateWord)
                 }
