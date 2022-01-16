@@ -79,4 +79,5 @@
         app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearned"
         app:layout_constraintTop_toTopOf="@+id/ivDelete"
         app:srcCompat="@mipmap/klipartz" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

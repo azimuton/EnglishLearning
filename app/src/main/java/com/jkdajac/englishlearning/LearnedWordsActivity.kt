@@ -1,14 +1,14 @@
 package com.jkdajac.englishlearning
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.TextKeyListener.clear
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.englishlearning.adapters.LearnedWordsAdapter
-import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
-import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.activity_learned_words.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,12 +23,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         setContentView(R.layout.activity_learned_words)
 
         ivBackToMainScreen.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        tvBackToMainScreen.setOnClickListener {
-            val intent = Intent(this, MainActivity ::class.java)
-            startActivity(intent)
+           finish()
         }
 
         getMyIntents()
@@ -42,7 +37,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
         wordDatabase = AppDatabase.getDatabase(this)
 
-
+        tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
     }
 
     fun getData() {
@@ -52,10 +47,28 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
     }
 
     override fun deleteItem(index: Int) {
-        val learnedWords = wordList.get(index)
-        wordDatabase.learnedwordsDao().deleteLearnedWords(learnedWords)
-        getData()
-        adapter.notifyDataSetChanged()
+
+        val addDialog = AlertDialog.Builder(this)
+        addDialog
+            .setMessage("Вы действительно хотите удалить запись?")
+            .setPositiveButton("Ok") { dialog, _ ->
+                val learnedWords = wordList[index]
+                wordDatabase.learnedwordsDao().deleteLearnedWords(learnedWords)
+                tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
+                getData()
+                adapter.notifyDataSetChanged()
+                finish();
+                overridePendingTransition(0, 0);
+                startActivity(intent);
+                overridePendingTransition(0, 0);
+                Toast.makeText(this, "Запись удалена!", Toast.LENGTH_SHORT).show()
+                dialog.dismiss()
+            }
+            .setNegativeButton("Отмена") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .create()
+            .show()
     }
 
     override fun openItem(index: Int) {

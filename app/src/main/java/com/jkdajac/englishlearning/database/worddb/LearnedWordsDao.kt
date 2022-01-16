@@ -8,6 +8,9 @@ interface LearnedWordsDao {
     @Query("SELECT * FROM LearnedWords")
     fun getAllLearnedWords(): List<LearnedWords>
 
+    @Query("SELECT  COUNT(DISTINCT id) as count FROM learnedwords")
+    fun count(): Int
+
     @Insert
     fun insertLearnedWords(learnedWords: LearnedWords)
 

@@ -10,6 +10,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 @Database(entities = arrayOf(Word::class, LearnedWords::class), version = 3)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun wordDao(): WordDao
+    abstract fun copies(): Copies
     abstract fun learnedwordsDao(): LearnedWordsDao
 
     companion object {

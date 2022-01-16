@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.englishlearning.MainActivity
 import com.jkdajac.englishlearning.MyIntentConstance
 import com.jkdajac.englishlearning.R
+import com.jkdajac.englishlearning.database.worddb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.item_view.view.*
 
@@ -40,9 +41,8 @@ class WordAdapter(
         }
         holder.deleteItem?.setOnClickListener {
             callback.deleteItem(position)
-
+            //callback.wordDatabase.wordDao().copy()
         }
-
     }
 
     override fun getItemCount(): Int {
@@ -57,6 +57,7 @@ class WordAdapter(
         var deleteItem : ImageView? = null
         var openItem : ImageView? = null
         var closeItem : ImageView? = null
+
 
         init{
             englishWord = itemView.tvWord
@@ -76,6 +77,7 @@ class WordAdapter(
         }
 
         interface ItemCallback {
+
             fun deleteItem(index: Int)
             fun openItem(index : Int)
             fun closeItem(index : Int)
