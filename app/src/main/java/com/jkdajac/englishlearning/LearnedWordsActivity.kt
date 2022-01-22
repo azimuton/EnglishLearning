@@ -1,5 +1,6 @@
 package com.jkdajac.englishlearning
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.method.TextKeyListener.clear
 import android.widget.Toast
@@ -23,7 +24,10 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         setContentView(R.layout.activity_learned_words)
 
         ivBackToMainScreen.setOnClickListener {
-           finish()
+            val intent = Intent(this, MainActivity :: class.java)
+            startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
         }
 
         getMyIntents()
@@ -38,6 +42,14 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         wordDatabase = AppDatabase.getDatabase(this)
 
         tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, MainActivity :: class.java)
+        startActivity(intent)
+        overridePendingTransition(0, R.anim.open_activity)
+        finish()
     }
 
     fun getData() {
@@ -57,7 +69,6 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
                 tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
                 getData()
                 adapter.notifyDataSetChanged()
-                finish();
                 overridePendingTransition(0, 0);
                 startActivity(intent);
                 overridePendingTransition(0, 0);

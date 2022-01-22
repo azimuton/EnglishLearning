@@ -11,8 +11,8 @@ import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.Word
+import com.jkdajac.englishlearning.newwords.NewWordsActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import java.sql.RowId
 
 class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     lateinit var adapter: WordAdapter
@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        fabNewWords.setOnClickListener {
+            val intent = Intent(this, NewWordsActivity::class.java)
+            startActivity(intent)
+        }
+
         btClose.setOnClickListener {
             finishAffinity()
         }
@@ -33,10 +38,12 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         btLearnedWords.setOnClickListener {
             val intent = Intent(this, LearnedWordsActivity :: class.java)
             startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
         }
 
         getMyIntents()
-3
+
         wordList = ArrayList<Word>()
         learnedwordList = ArrayList<LearnedWords>()
         wordDatabase = AppDatabase.getDatabase(this)
@@ -74,7 +81,6 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                 if (etEnglishWord.text.isNotEmpty() && etTranslateWord.text.isNotEmpty()) {
                     val englishWord: String = etEnglishWord.text.toString()
                     val translateWord: String = etTranslateWord.text.toString()
-
 
                     val word = Word(englishWord = englishWord, translateWord = translateWord)
                     Toast.makeText(this, "Поля заполнены!", Toast.LENGTH_LONG)

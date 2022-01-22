@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">EnglishLearning</string>
+    <string-array name="names">
+        <item>Семья</item>
+        <item>Домашние животные</item>
+        <item>Дикие животные</item>
+        <item>Части тела</item>
+        <item>Кухня</item>
+        <item>Спальня</item>
+        <item>Ванная комната</item>
+        <item>Город</item>
+        <item>Природа</item>
+        <item>Овощи</item>
+        <item>Фрукты</item>
+    </string-array>
 </resources>

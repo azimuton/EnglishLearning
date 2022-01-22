@@ -9,15 +9,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning">
-        <activity android:name=".LearnedWordsActivity"></activity>
-        <activity android:name=".MainActivity"
-            android:windowSoftInputMode="stateHidden">
+        <activity
+            android:name=".newwords.words.FruitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.VegetablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.NatureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.CityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.WashRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.BedRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.KitchenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.PartsOfBodyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.WildAnimalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.HomeAnimalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.FamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.NewWordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.NewWordsActivity"
+            android:exported="false" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LearnedWordsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>

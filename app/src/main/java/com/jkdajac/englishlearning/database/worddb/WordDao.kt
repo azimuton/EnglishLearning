@@ -8,7 +8,7 @@ import androidx.room.*
         fun getAll(): List<Word>
 
         @Transaction
-        @Query("INSERT INTO learnedwords SELECT * FROM word ")
+        @Query("INSERT INTO learnedwords SELECT * FROM word")
         fun copy()
 
         @Query("DELETE FROM word")
