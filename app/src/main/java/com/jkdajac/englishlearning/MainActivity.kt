@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                 wordDatabase.wordDao().deleteWord(word)
                 getData()
                 adapter.notifyDataSetChanged()
-                finish();
+                //finish();
                 overridePendingTransition(0, 0);
                 startActivity(intent);
                 overridePendingTransition(0, 0);

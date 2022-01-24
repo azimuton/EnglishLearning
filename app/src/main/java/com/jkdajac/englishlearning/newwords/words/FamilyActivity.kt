@@ -26,9 +26,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivFather.setOnClickListener {
             val english : String = father.text.toString()
@@ -36,9 +33,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivSister.setOnClickListener {
             val english : String = sister.text.toString()
@@ -46,9 +40,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivBrother.setOnClickListener {
             val english : String = brother.text.toString()
@@ -56,9 +47,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivWife.setOnClickListener {
             val english : String = wife.text.toString()
@@ -66,9 +54,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivHusband.setOnClickListener {
             val english : String = husband.text.toString()
@@ -76,9 +61,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivSon.setOnClickListener {
             val english : String = son.text.toString()
@@ -86,9 +68,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivDaughter.setOnClickListener {
             val english : String = daughter.text.toString()
@@ -96,9 +75,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivGrandmother.setOnClickListener {
             val english : String = grandmother.text.toString()
@@ -106,9 +82,6 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
         }
         ivGrandfather.setOnClickListener {
             val english : String = grandfather.text.toString()
@@ -116,9 +89,48 @@ class FamilyActivity : AppCompatActivity() {
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            animation()
+        }
+        ivFatherInLaw.setOnClickListener {
+            val english : String = fatherinlaw.text.toString()
+            val translate : String = tvFatherInLaw.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivMotherInLaw.setOnClickListener {
+            val english : String = motherinlaw.text.toString()
+            val translate : String = tvMotherInLaw.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivBrotherInLaw.setOnClickListener {
+            val english : String = brotherinlaw.text.toString()
+            val translate : String = tvBrotherInLaw.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivSisterInLaw.setOnClickListener {
+            val english : String = sisterinlaw.text.toString()
+            val translate : String = tvSisterInLaw.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivUncle.setOnClickListener {
+            val english : String = uncle.text.toString()
+            val translate : String = tvUncle.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivAunt.setOnClickListener {
+            val english : String = aunt.text.toString()
+            val translate : String = tvAunt.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
     }
 

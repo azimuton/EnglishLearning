@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning">
         <activity
+            android:name=".newwords.words.VerbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.BuildingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.ToolsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.TransportActivity"
+            android:exported="false" />
+        <activity
             android:name=".newwords.words.FruitsActivity"
             android:exported="false" />
         <activity

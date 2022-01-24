@@ -12,5 +12,9 @@
         <item>Природа</item>
         <item>Овощи</item>
         <item>Фрукты</item>
+        <item>Транспорт</item>
+        <item>Инструменты</item>
+        <item>Здание</item>
+        <item>Глаголы</item>
     </string-array>
 </resources>
