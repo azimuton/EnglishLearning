@@ -31,17 +31,11 @@
                 <TextView
                     android:id="@+id/wolf"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Wolf" />
 
                 <TextView
                     android:id="@+id/tvWolf"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Волк" />
 
                 <ImageView
@@ -61,17 +55,11 @@
                 <TextView
                     android:id="@+id/fox"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Fox" />
 
                 <TextView
                     android:id="@+id/tvFox"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Лис" />
 
                 <ImageView
@@ -91,17 +79,11 @@
                 <TextView
                     android:id="@+id/frog"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Frog" />
 
                 <TextView
                     android:id="@+id/tvFrog"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Лягушка" />
 
                 <ImageView
@@ -121,17 +103,11 @@
                 <TextView
                     android:id="@+id/deer"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Deer" />
 
                 <TextView
                     android:id="@+id/tvDeer"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Олень" />
 
                 <ImageView
@@ -151,17 +127,11 @@
                 <TextView
                     android:id="@+id/bear"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bear" />
 
                 <TextView
                     android:id="@+id/tvBear"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Медведь" />
 
                 <ImageView
@@ -181,17 +151,11 @@
                 <TextView
                     android:id="@+id/lion"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lion" />
 
                 <TextView
                     android:id="@+id/tvLion"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Лев" />
 
                 <ImageView
@@ -211,17 +175,11 @@
                 <TextView
                     android:id="@+id/tiger"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Tiger" />
 
                 <TextView
                     android:id="@+id/tvTiger"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Тигр" />
 
                 <ImageView
@@ -241,17 +199,11 @@
                 <TextView
                     android:id="@+id/boar"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Boar" />
 
                 <TextView
                     android:id="@+id/tvBoar"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кабан" />
 
                 <ImageView
@@ -271,17 +223,11 @@
                 <TextView
                     android:id="@+id/salmon"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Salmon" />
 
                 <TextView
                     android:id="@+id/tvSalmon"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Лось" />
 
                 <ImageView
@@ -301,17 +247,11 @@
                 <TextView
                     android:id="@+id/bison"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bison" />
 
                 <TextView
                     android:id="@+id/tvBison"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Зубр" />
 
                 <ImageView
@@ -331,17 +271,11 @@
                 <TextView
                     android:id="@+id/zebra"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Zebra" />
 
                 <TextView
                     android:id="@+id/tvZebra"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Зебра" />
 
                 <ImageView
@@ -361,17 +295,11 @@
                 <TextView
                     android:id="@+id/lynx"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lynx" />
 
                 <TextView
                     android:id="@+id/tvLynx"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Рысь" />
 
                 <ImageView
@@ -391,17 +319,11 @@
                 <TextView
                     android:id="@+id/puma"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Puma" />
 
                 <TextView
                     android:id="@+id/tvPuma"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Пума" />
 
                 <ImageView
@@ -421,17 +343,11 @@
                 <TextView
                     android:id="@+id/rhinoceros"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Rhinoceros" />
 
                 <TextView
                     android:id="@+id/tvRhinoceros"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Носорог" />
 
                 <ImageView
@@ -451,17 +367,11 @@
                 <TextView
                     android:id="@+id/elephant"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Elephant" />
 
                 <TextView
                     android:id="@+id/tvElephant"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Слон" />
 
                 <ImageView
@@ -481,17 +391,11 @@
                 <TextView
                     android:id="@+id/beaver"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Beaver" />
 
                 <TextView
                     android:id="@+id/tvBeaver"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бобер" />
 
                 <ImageView
@@ -511,17 +415,11 @@
                 <TextView
                     android:id="@+id/rat"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Rat" />
 
                 <TextView
                     android:id="@+id/tvRat"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Крыса" />
 
                 <ImageView
@@ -541,17 +439,11 @@
                 <TextView
                     android:id="@+id/bird"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bird" />
 
                 <TextView
                     android:id="@+id/tvBird"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Птица" />
 
                 <ImageView
@@ -571,17 +463,11 @@
                 <TextView
                     android:id="@+id/hyena"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hyena" />
 
                 <TextView
                     android:id="@+id/tvHyena"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Гиена" />
 
                 <ImageView
@@ -601,17 +487,11 @@
                 <TextView
                     android:id="@+id/snake"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Snake" />
 
                 <TextView
                     android:id="@+id/tvSnake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Змея" />
 
                 <ImageView
@@ -631,17 +511,11 @@
                 <TextView
                     android:id="@+id/monkey"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Monkey" />
 
                 <TextView
                     android:id="@+id/tvMonkey"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Обезьяна" />
 
                 <ImageView
@@ -661,17 +535,11 @@
                 <TextView
                     android:id="@+id/hippopotamus"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hippopotamus" />
 
                 <TextView
                     android:id="@+id/tvHippopotamus"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бегемот" />
 
                 <ImageView
@@ -691,17 +559,11 @@
                 <TextView
                     android:id="@+id/crocodile"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Crocodile" />
 
                 <TextView
                     android:id="@+id/tvCrocodile"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Крокодил" />
 
                 <ImageView
@@ -721,17 +583,11 @@
                 <TextView
                     android:id="@+id/borsuk"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Borsuk" />
 
                 <TextView
                     android:id="@+id/tvBorsuk"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Борсук" />
 
                 <ImageView
@@ -751,17 +607,11 @@
                 <TextView
                     android:id="@+id/squirrel"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Squirrel" />
 
                 <TextView
                     android:id="@+id/tvSquirrel"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Белка" />
 
                 <ImageView
@@ -781,17 +631,11 @@
                 <TextView
                     android:id="@+id/giraffe"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Giraffe" />
 
                 <TextView
                     android:id="@+id/tvGiraffe"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Жираф" />
 
                 <ImageView
@@ -811,17 +655,11 @@
                 <TextView
                     android:id="@+id/kangaroo"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Kangaroo" />
 
                 <TextView
                     android:id="@+id/tvKangaroo"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кенгуру" />
 
                 <ImageView

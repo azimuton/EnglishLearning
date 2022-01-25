@@ -31,17 +31,11 @@
                 <TextView
                     android:id="@+id/arise"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Arise" />
 
                 <TextView
                     android:id="@+id/tvArise"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Подниматься" />
 
                 <ImageView
@@ -61,17 +55,11 @@
                 <TextView
                     android:id="@+id/awake"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Awake" />
 
                 <TextView
                     android:id="@+id/tvAwake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Пробуждать" />
 
                 <ImageView
@@ -91,17 +79,11 @@
                 <TextView
                     android:id="@+id/be"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Be" />
 
                 <TextView
                     android:id="@+id/tvBe"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Быть" />
 
                 <ImageView
@@ -121,17 +103,11 @@
                 <TextView
                     android:id="@+id/bears"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bear" />
 
                 <TextView
                     android:id="@+id/tvBears"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Рожать, Переносить" />
 
                 <ImageView
@@ -151,17 +127,11 @@
                 <TextView
                     android:id="@+id/beat"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Beat" />
 
                 <TextView
                     android:id="@+id/tvBeat"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бить" />
 
                 <ImageView
@@ -181,17 +151,11 @@
                 <TextView
                     android:id="@+id/become"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Become" />
 
                 <TextView
                     android:id="@+id/tvBecome"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Становиться" />
 
                 <ImageView
@@ -211,17 +175,11 @@
                 <TextView
                     android:id="@+id/begin"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Begin" />
 
                 <TextView
                     android:id="@+id/tvBegin"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Начинать" />
 
                 <ImageView
@@ -241,17 +199,11 @@
                 <TextView
                     android:id="@+id/bend"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bend" />
 
                 <TextView
                     android:id="@+id/tvBend"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Наклонять" />
 
                 <ImageView
@@ -271,17 +223,11 @@
                 <TextView
                     android:id="@+id/bet"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bet" />
 
                 <TextView
                     android:id="@+id/tvBet"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Заключать пари" />
 
                 <ImageView
@@ -301,17 +247,11 @@
                 <TextView
                     android:id="@+id/bind"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bind" />
 
                 <TextView
                     android:id="@+id/tvBind"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Связывать" />
 
                 <ImageView
@@ -331,17 +271,11 @@
                 <TextView
                     android:id="@+id/bite"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bite" />
 
                 <TextView
                     android:id="@+id/tvBite"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кусать" />
 
                 <ImageView
@@ -361,17 +295,11 @@
                 <TextView
                     android:id="@+id/bleed"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bleed" />
 
                 <TextView
                     android:id="@+id/tvBleed"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кровоточить" />
 
                 <ImageView
@@ -391,17 +319,11 @@
                 <TextView
                     android:id="@+id/blow"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Blow" />
 
                 <TextView
                     android:id="@+id/tvBlow"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Дуть" />
 
                 <ImageView
@@ -421,17 +343,11 @@
                 <TextView
                     android:id="@+id/Break"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Break" />
 
                 <TextView
                     android:id="@+id/tvBreak"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ломать" />
 
                 <ImageView
@@ -451,17 +367,11 @@
                 <TextView
                     android:id="@+id/breed"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Breed" />
 
                 <TextView
                     android:id="@+id/tvBreed"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Разводить животных" />
 
                 <ImageView
@@ -481,17 +391,11 @@
                 <TextView
                     android:id="@+id/bring"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Bring" />
 
                 <TextView
                     android:id="@+id/tvBring"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Приносить" />
 
                 <ImageView
@@ -511,17 +415,11 @@
                 <TextView
                     android:id="@+id/build"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Build" />
 
                 <TextView
                     android:id="@+id/tvBuild"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Строить" />
 
                 <ImageView
@@ -541,17 +439,11 @@
                 <TextView
                     android:id="@+id/buy"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Buy" />
 
                 <TextView
                     android:id="@+id/tvBuy"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Покупать" />
 
                 <ImageView
@@ -571,17 +463,11 @@
                 <TextView
                     android:id="@+id/Catch"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Catch" />
 
                 <TextView
                     android:id="@+id/tvCatch"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ловить" />
 
                 <ImageView
@@ -601,17 +487,11 @@
                 <TextView
                     android:id="@+id/choose"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Choose" />
 
                 <TextView
                     android:id="@+id/tvChoose"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Выбирать" />
 
                 <ImageView
@@ -631,17 +511,11 @@
                 <TextView
                     android:id="@+id/cling"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Cling" />
 
                 <TextView
                     android:id="@+id/tvCling"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Цепляться" />
 
                 <ImageView
@@ -661,17 +535,11 @@
                 <TextView
                     android:id="@+id/come"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Come" />
 
                 <TextView
                     android:id="@+id/tvCome"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Приходить" />
 
                 <ImageView
@@ -691,17 +559,11 @@
                 <TextView
                     android:id="@+id/cost"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Cost" />
 
                 <TextView
                     android:id="@+id/tvCost"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Стоить" />
 
                 <ImageView
@@ -721,17 +583,11 @@
                 <TextView
                     android:id="@+id/cut"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Cut" />
 
                 <TextView
                     android:id="@+id/tvCut"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Резать" />
 
                 <ImageView
@@ -751,17 +607,11 @@
                 <TextView
                     android:id="@+id/deal"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Deal" />
 
                 <TextView
                     android:id="@+id/tvDeal"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Вести дела" />
 
                 <ImageView
@@ -781,17 +631,11 @@
                 <TextView
                     android:id="@+id/dig"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Dig" />
 
                 <TextView
                     android:id="@+id/tvDig"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Копать" />
 
                 <ImageView
@@ -811,17 +655,11 @@
                 <TextView
                     android:id="@+id/Do"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Do" />
 
                 <TextView
                     android:id="@+id/tvDo"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Делать" />
 
                 <ImageView
@@ -841,17 +679,11 @@
                 <TextView
                     android:id="@+id/draw"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Draw" />
 
                 <TextView
                     android:id="@+id/tvDraw"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Рисовать, Тянуть" />
 
                 <ImageView
@@ -871,17 +703,11 @@
                 <TextView
                     android:id="@+id/drink"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Drink" />
 
                 <TextView
                     android:id="@+id/tvDrink"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Пить" />
 
                 <ImageView
@@ -901,17 +727,11 @@
                 <TextView
                     android:id="@+id/drive"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Drive" />
 
                 <TextView
                     android:id="@+id/tvDrive"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Водить авто" />
 
                 <ImageView
@@ -931,17 +751,11 @@
                 <TextView
                     android:id="@+id/eat"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Eat" />
 
                 <TextView
                     android:id="@+id/tvEat"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кушать" />
 
                 <ImageView
@@ -961,17 +775,11 @@
                 <TextView
                     android:id="@+id/fall"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Fall" />
 
                 <TextView
                     android:id="@+id/tvFall"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Падать" />
 
                 <ImageView
@@ -991,17 +799,11 @@
                 <TextView
                     android:id="@+id/feed"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Feed" />
 
                 <TextView
                     android:id="@+id/tvFeed"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Кормить" />
 
                 <ImageView
@@ -1021,17 +823,11 @@
                 <TextView
                     android:id="@+id/feel"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Feel" />
 
                 <TextView
                     android:id="@+id/tvFeel"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Чувствовать" />
 
                 <ImageView
@@ -1051,17 +847,11 @@
                 <TextView
                     android:id="@+id/fight"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Fight" />
 
                 <TextView
                     android:id="@+id/tvFight"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бороться" />
 
                 <ImageView
@@ -1081,17 +871,11 @@
                 <TextView
                     android:id="@+id/find"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Find" />
 
                 <TextView
                     android:id="@+id/tvFind"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Находить" />
 
                 <ImageView
@@ -1111,17 +895,11 @@
                 <TextView
                     android:id="@+id/flee"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Flee" />
 
                 <TextView
                     android:id="@+id/tvFlee"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Сбегать" />
 
                 <ImageView
@@ -1141,17 +919,11 @@
                 <TextView
                     android:id="@+id/fly"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Fly" />
 
                 <TextView
                     android:id="@+id/tvFly"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Летать, Муха" />
 
                 <ImageView
@@ -1171,17 +943,11 @@
                 <TextView
                     android:id="@+id/forbid"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Forbid" />
 
                 <TextView
                     android:id="@+id/tvForbid"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Запрещать" />
 
                 <ImageView
@@ -1201,17 +967,11 @@
                 <TextView
                     android:id="@+id/forget"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Forget" />
 
                 <TextView
                     android:id="@+id/tvForget"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Забывать" />
 
                 <ImageView
@@ -1231,17 +991,11 @@
                 <TextView
                     android:id="@+id/forgive"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Forgive" />
 
                 <TextView
                     android:id="@+id/tvForgive"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Прощать" />
 
                 <ImageView
@@ -1261,17 +1015,11 @@
                 <TextView
                     android:id="@+id/freeze"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Freeze" />
 
                 <TextView
                     android:id="@+id/tvFreeze"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Замораживать" />
 
                 <ImageView
@@ -1291,17 +1039,11 @@
                 <TextView
                     android:id="@+id/get"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Get" />
 
                 <TextView
                     android:id="@+id/tvGet"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Получать" />
 
                 <ImageView
@@ -1321,17 +1063,11 @@
                 <TextView
                     android:id="@+id/give"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Give" />
 
                 <TextView
                     android:id="@+id/tvGive"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Давать" />
 
                 <ImageView
@@ -1351,17 +1087,11 @@
                 <TextView
                     android:id="@+id/go"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Go" />
 
                 <TextView
                     android:id="@+id/tvGo"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Идти" />
 
                 <ImageView
@@ -1381,17 +1111,11 @@
                 <TextView
                     android:id="@+id/grow"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Grow" />
 
                 <TextView
                     android:id="@+id/tvGrow"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Расти" />
 
                 <ImageView
@@ -1411,17 +1135,11 @@
                 <TextView
                     android:id="@+id/hang"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hang" />
 
                 <TextView
                     android:id="@+id/tvHang"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Висеть" />
 
                 <ImageView
@@ -1441,17 +1159,11 @@
                 <TextView
                     android:id="@+id/have"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Have" />
 
                 <TextView
                     android:id="@+id/tvHave"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Иметь" />
 
                 <ImageView
@@ -1471,17 +1183,11 @@
                 <TextView
                     android:id="@+id/hear"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hear" />
 
                 <TextView
                     android:id="@+id/tvHear"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Слышать" />
 
                 <ImageView
@@ -1501,17 +1207,11 @@
                 <TextView
                     android:id="@+id/hide"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hide" />
 
                 <TextView
                     android:id="@+id/tvHide"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Прятать" />
 
                 <ImageView
@@ -1531,17 +1231,11 @@
                 <TextView
                     android:id="@+id/hit"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hit" />
 
                 <TextView
                     android:id="@+id/tvHit"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ударять, Бить" />
 
                 <ImageView
@@ -1561,17 +1255,11 @@
                 <TextView
                     android:id="@+id/hold"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hold" />
 
                 <TextView
                     android:id="@+id/tvHold"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Держать" />
 
                 <ImageView
@@ -1591,17 +1279,11 @@
                 <TextView
                     android:id="@+id/hurt"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Hurt" />
 
                 <TextView
                     android:id="@+id/tvHurt"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Причинять боль" />
 
                 <ImageView
@@ -1621,17 +1303,11 @@
                 <TextView
                     android:id="@+id/keep"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Keep" />
 
                 <TextView
                     android:id="@+id/tvKeep"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Сохранять" />
 
                 <ImageView
@@ -1651,17 +1327,11 @@
                 <TextView
                     android:id="@+id/know"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Know" />
 
                 <TextView
                     android:id="@+id/tvKnow"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Знать" />
 
                 <ImageView
@@ -1681,17 +1351,11 @@
                 <TextView
                     android:id="@+id/lay"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lay" />
 
                 <TextView
                     android:id="@+id/tvLay"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Класть, Стелить" />
 
                 <ImageView
@@ -1711,17 +1375,11 @@
                 <TextView
                     android:id="@+id/lead"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lead" />
 
                 <TextView
                     android:id="@+id/tvLead"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Вести, Лидировать" />
 
                 <ImageView
@@ -1741,17 +1399,11 @@
                 <TextView
                     android:id="@+id/learn"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Learn" />
 
                 <TextView
                     android:id="@+id/tvLearn"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Учиться, Узнавать" />
 
                 <ImageView
@@ -1771,17 +1423,11 @@
                 <TextView
                     android:id="@+id/leave"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Leave" />
 
                 <TextView
                     android:id="@+id/tvLeave"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Покидать, Оставлять" />
 
                 <ImageView
@@ -1801,17 +1447,11 @@
                 <TextView
                     android:id="@+id/lend"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lend" />
 
                 <TextView
                     android:id="@+id/tvLend"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Давать взаймы" />
 
                 <ImageView
@@ -1831,17 +1471,11 @@
                 <TextView
                     android:id="@+id/let"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Let" />
 
                 <TextView
                     android:id="@+id/tvLet"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Позволять" />
 
                 <ImageView
@@ -1861,17 +1495,11 @@
                 <TextView
                     android:id="@+id/lie"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lie" />
 
                 <TextView
                     android:id="@+id/tvLie"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Лгать" />
 
                 <ImageView
@@ -1891,17 +1519,11 @@
                 <TextView
                     android:id="@+id/light"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Light" />
 
                 <TextView
                     android:id="@+id/tvLight"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Зажигать, Освещать" />
 
                 <ImageView
@@ -1921,17 +1543,11 @@
                 <TextView
                     android:id="@+id/lose"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Lose" />
 
                 <TextView
                     android:id="@+id/tvLose"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Терять" />
 
                 <ImageView
@@ -1951,17 +1567,11 @@
                 <TextView
                     android:id="@+id/make"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Make" />
 
                 <TextView
                     android:id="@+id/tvMake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Делать, Мастерить" />
 
                 <ImageView
@@ -1981,17 +1591,11 @@
                 <TextView
                     android:id="@+id/mean"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Mean" />
 
                 <TextView
                     android:id="@+id/tvMean"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Значить" />
 
                 <ImageView
@@ -2011,17 +1615,11 @@
                 <TextView
                     android:id="@+id/meet"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Meet" />
 
                 <TextView
                     android:id="@+id/tvMeet"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Встречать" />
 
                 <ImageView
@@ -2041,17 +1639,11 @@
                 <TextView
                     android:id="@+id/pay"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Pay" />
 
                 <TextView
                     android:id="@+id/tvPay"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Платить" />
 
                 <ImageView
@@ -2071,17 +1663,11 @@
                 <TextView
                     android:id="@+id/put"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Put" />
 
                 <TextView
                     android:id="@+id/tvPut"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Класть, Ставить" />
 
                 <ImageView
@@ -2101,17 +1687,11 @@
                 <TextView
                     android:id="@+id/read"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Read" />
 
                 <TextView
                     android:id="@+id/tvRead"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Читать" />
 
                 <ImageView
@@ -2131,17 +1711,11 @@
                 <TextView
                     android:id="@+id/ride"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ride" />
 
                 <TextView
                     android:id="@+id/tvRide"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ездить верхом" />
 
                 <ImageView
@@ -2161,17 +1735,11 @@
                 <TextView
                     android:id="@+id/ring"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Ring" />
 
                 <TextView
                     android:id="@+id/tvRing"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Звонить" />
 
                 <ImageView
@@ -2191,17 +1759,11 @@
                 <TextView
                     android:id="@+id/rise"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Rise" />
 
                 <TextView
                     android:id="@+id/tvRise"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Подниматься" />
 
                 <ImageView
@@ -2221,17 +1783,11 @@
                 <TextView
                     android:id="@+id/run"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Run" />
 
                 <TextView
                     android:id="@+id/tvRun"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бежать" />
 
                 <ImageView
@@ -2251,17 +1807,11 @@
                 <TextView
                     android:id="@+id/say"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Say" />
 
                 <TextView
                     android:id="@+id/tvSay"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Сказать" />
 
                 <ImageView
@@ -2281,17 +1831,11 @@
                 <TextView
                     android:id="@+id/see"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="See" />
 
                 <TextView
                     android:id="@+id/tvSee"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Видеть" />
 
                 <ImageView
@@ -2311,17 +1855,11 @@
                 <TextView
                     android:id="@+id/seek"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Seek" />
 
                 <TextView
                     android:id="@+id/tvSeek"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Искать" />
 
                 <ImageView
@@ -2341,17 +1879,11 @@
                 <TextView
                     android:id="@+id/sell"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sell" />
 
                 <TextView
                     android:id="@+id/tvSell"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Продавать" />
 
                 <ImageView
@@ -2371,17 +1903,11 @@
                 <TextView
                     android:id="@+id/send"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Send" />
 
                 <TextView
                     android:id="@+id/tvSend"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Посылать" />
 
                 <ImageView
@@ -2401,17 +1927,11 @@
                 <TextView
                     android:id="@+id/set"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Set" />
 
                 <TextView
                     android:id="@+id/tvSet"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Устанавливать" />
 
                 <ImageView
@@ -2431,17 +1951,11 @@
                 <TextView
                     android:id="@+id/shake"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Shake" />
 
                 <TextView
                     android:id="@+id/tvShake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Трясти" />
 
                 <ImageView
@@ -2461,17 +1975,11 @@
                 <TextView
                     android:id="@+id/shine"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Shine" />
 
                 <TextView
                     android:id="@+id/tvShine"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Светить, Сиять" />
 
                 <ImageView
@@ -2491,17 +1999,11 @@
                 <TextView
                     android:id="@+id/shoot"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Shoot" />
 
                 <TextView
                     android:id="@+id/tvShoot"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Стрелять" />
 
                 <ImageView
@@ -2521,17 +2023,11 @@
                 <TextView
                     android:id="@+id/show"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Show" />
 
                 <TextView
                     android:id="@+id/tvShow"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Показывать" />
 
                 <ImageView
@@ -2551,17 +2047,11 @@
                 <TextView
                     android:id="@+id/shrink"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Shrink" />
 
                 <TextView
                     android:id="@+id/tvShrink"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Сжиматься" />
 
                 <ImageView
@@ -2581,17 +2071,11 @@
                 <TextView
                     android:id="@+id/shut"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Shut" />
 
                 <TextView
                     android:id="@+id/tvShut"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Закрывать" />
 
                 <ImageView
@@ -2611,17 +2095,11 @@
                 <TextView
                     android:id="@+id/sing"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sing" />
 
                 <TextView
                     android:id="@+id/tvSing"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Петь" />
 
                 <ImageView
@@ -2641,17 +2119,11 @@
                 <TextView
                     android:id="@+id/sit"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sit" />
 
                 <TextView
                     android:id="@+id/tvSit"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Сидеть" />
 
                 <ImageView
@@ -2671,17 +2143,11 @@
                 <TextView
                     android:id="@+id/sleep"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sleep" />
 
                 <TextView
                     android:id="@+id/tvSleep"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Спать" />
 
                 <ImageView
@@ -2701,17 +2167,11 @@
                 <TextView
                     android:id="@+id/slide"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Slide" />
 
                 <TextView
                     android:id="@+id/tvSlide"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Скользить" />
 
                 <ImageView
@@ -2731,17 +2191,11 @@
                 <TextView
                     android:id="@+id/smell"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Smell" />
 
                 <TextView
                     android:id="@+id/tvSmell"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Пахнуть, Нюхать" />
 
                 <ImageView
@@ -2761,17 +2215,11 @@
                 <TextView
                     android:id="@+id/speak"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Speak" />
 
                 <TextView
                     android:id="@+id/tvSpeak"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Говорить" />
 
                 <ImageView
@@ -2791,17 +2239,11 @@
                 <TextView
                     android:id="@+id/spell"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spell" />
 
                 <TextView
                     android:id="@+id/tvSpell"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Произносить по буквам" />
 
                 <ImageView
@@ -2821,17 +2263,11 @@
                 <TextView
                     android:id="@+id/spend"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spend" />
 
                 <TextView
                     android:id="@+id/tvSpend"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Тратить" />
 
                 <ImageView
@@ -2851,17 +2287,11 @@
                 <TextView
                     android:id="@+id/spill"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spill" />
 
                 <TextView
                     android:id="@+id/tvSpill"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Разлить" />
 
                 <ImageView
@@ -2881,17 +2311,11 @@
                 <TextView
                     android:id="@+id/spin"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spin" />
 
                 <TextView
                     android:id="@+id/tvSpin"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Крутить" />
 
                 <ImageView
@@ -2911,17 +2335,11 @@
                 <TextView
                     android:id="@+id/split"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Split" />
 
                 <TextView
                     android:id="@+id/tvSplit"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Разделять" />
 
                 <ImageView
@@ -2941,17 +2359,11 @@
                 <TextView
                     android:id="@+id/spoil"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spoil" />
 
                 <TextView
                     android:id="@+id/tvSpoil"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Портить" />
 
                 <ImageView
@@ -2971,17 +2383,11 @@
                 <TextView
                     android:id="@+id/spread"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Spread" />
 
                 <TextView
                     android:id="@+id/tvSpread"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Разворачивать" />
 
                 <ImageView
@@ -3001,17 +2407,11 @@
                 <TextView
                     android:id="@+id/stand"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Stand" />
 
                 <TextView
                     android:id="@+id/tvStand"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Стоять" />
 
                 <ImageView
@@ -3031,17 +2431,11 @@
                 <TextView
                     android:id="@+id/steal"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Steal" />
 
                 <TextView
                     android:id="@+id/tvSteal"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Воровать" />
 
                 <ImageView
@@ -3061,17 +2455,11 @@
                 <TextView
                     android:id="@+id/sting"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sting" />
 
                 <TextView
                     android:id="@+id/tvSting"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Жалить" />
 
                 <ImageView
@@ -3091,17 +2479,11 @@
                 <TextView
                     android:id="@+id/stink"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Stink" />
 
                 <TextView
                     android:id="@+id/tvStink"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Вонять" />
 
                 <ImageView
@@ -3121,17 +2503,11 @@
                 <TextView
                     android:id="@+id/strike"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Strike" />
 
                 <TextView
                     android:id="@+id/tvStrike"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бастовать, Ударять" />
 
                 <ImageView
@@ -3151,17 +2527,11 @@
                 <TextView
                     android:id="@+id/swear"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Swear" />
 
                 <TextView
                     android:id="@+id/tvSwear"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Клясться, Ругаться" />
 
                 <ImageView
@@ -3181,17 +2551,11 @@
                 <TextView
                     android:id="@+id/sweep"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Sweep" />
 
                 <TextView
                     android:id="@+id/tvSweep"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Подметать" />
 
                 <ImageView
@@ -3211,17 +2575,11 @@
                 <TextView
                     android:id="@+id/swell"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Swell" />
 
                 <TextView
                     android:id="@+id/tvSwell"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Опухать" />
 
                 <ImageView
@@ -3241,17 +2599,11 @@
                 <TextView
                     android:id="@+id/swim"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Swim" />
 
                 <TextView
                     android:id="@+id/tvSwim"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Плавать" />
 
                 <ImageView
@@ -3271,17 +2623,11 @@
                 <TextView
                     android:id="@+id/take"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Take" />
 
                 <TextView
                     android:id="@+id/tvTake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Брать" />
 
                 <ImageView
@@ -3301,17 +2647,11 @@
                 <TextView
                     android:id="@+id/teach"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Teach" />
 
                 <TextView
                     android:id="@+id/tvTeach"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Обучать" />
 
                 <ImageView
@@ -3331,17 +2671,11 @@
                 <TextView
                     android:id="@+id/tear"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Tear" />
 
                 <TextView
                     android:id="@+id/tvTear"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Рвать" />
 
                 <ImageView
@@ -3361,17 +2695,11 @@
                 <TextView
                     android:id="@+id/tell"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Tell" />
 
                 <TextView
                     android:id="@+id/tvTell"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Рассказывать" />
 
                 <ImageView
@@ -3391,17 +2719,11 @@
                 <TextView
                     android:id="@+id/think"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Think" />
 
                 <TextView
                     android:id="@+id/tvThink"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Думать" />
 
                 <ImageView
@@ -3421,17 +2743,11 @@
                 <TextView
                     android:id="@+id/Throw"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Throw" />
 
                 <TextView
                     android:id="@+id/tvThrow"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Бросать" />
 
                 <ImageView
@@ -3451,17 +2767,11 @@
                 <TextView
                     android:id="@+id/understand"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Understand" />
 
                 <TextView
                     android:id="@+id/tvUnderstand"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Понимать" />
 
                 <ImageView
@@ -3481,17 +2791,11 @@
                 <TextView
                     android:id="@+id/wake"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Wake" />
 
                 <TextView
                     android:id="@+id/tvWake"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Будить" />
 
                 <ImageView
@@ -3511,17 +2815,11 @@
                 <TextView
                     android:id="@+id/wear"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Wear" />
 
                 <TextView
                     android:id="@+id/tvWear"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Носить(одежду)" />
 
                 <ImageView
@@ -3541,17 +2839,11 @@
                 <TextView
                     android:id="@+id/win"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Win" />
 
                 <TextView
                     android:id="@+id/tvWin"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Побеждать" />
 
                 <ImageView
@@ -3571,17 +2863,11 @@
                 <TextView
                     android:id="@+id/wind"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Wind" />
 
                 <TextView
                     android:id="@+id/tvWind"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Обматывать,Изгибать" />
 
                 <ImageView
@@ -3601,17 +2887,11 @@
                 <TextView
                     android:id="@+id/write"
                     style="@style/english"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Write" />
 
                 <TextView
                     android:id="@+id/tvWrite"
                     style="@style/translate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Писать" />
 
                 <ImageView
