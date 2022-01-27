@@ -29,17 +29,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/bedroom"
+                    android:id="@+id/building"
                     style="@style/english"
-                    android:text="Bedroom" />
+                    android:text="Building" />
 
                 <TextView
-                    android:id="@+id/tvBedroom"
+                    android:id="@+id/tvBuilding"
                     style="@style/translate"
-                    android:text="Спальня" />
+                    android:text="Здание" />
 
                 <ImageView
-                    android:id="@+id/ivBedroom"
+                    android:id="@+id/ivBuilding"
                     style="@style/image_to_main"
                     android:layout_height="match_parent"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -53,17 +53,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/bed"
+                    android:id="@+id/windows"
                     style="@style/english"
-                    android:text="Bed" />
+                    android:text="Window" />
 
                 <TextView
-                    android:id="@+id/tvBed"
+                    android:id="@+id/tvWindow"
                     style="@style/translate"
-                    android:text="Кровать" />
+                    android:text="Окно" />
 
                 <ImageView
-                    android:id="@+id/ivBed"
+                    android:id="@+id/ivWindow"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -77,17 +77,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/nightstand"
+                    android:id="@+id/door"
                     style="@style/english"
-                    android:text="Nightstand" />
+                    android:text="Door" />
 
                 <TextView
-                    android:id="@+id/tvNightstand"
+                    android:id="@+id/tvDoor"
                     style="@style/translate"
-                    android:text="Прикроватная тумба" />
+                    android:text="Дверь" />
 
                 <ImageView
-                    android:id="@+id/ivNightstand"
+                    android:id="@+id/ivDoor"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -101,17 +101,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/closet"
+                    android:id="@+id/floor"
                     style="@style/english"
-                    android:text="Closet" />
+                    android:text="Floor" />
 
                 <TextView
-                    android:id="@+id/tvCloset"
+                    android:id="@+id/tvFloor"
                     style="@style/translate"
-                    android:text="Шкаф" />
+                    android:text="Пол" />
 
                 <ImageView
-                    android:id="@+id/ivCloset"
+                    android:id="@+id/ivFloor"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -125,17 +125,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/sconce"
+                    android:id="@+id/ceiling"
                     style="@style/english"
-                    android:text="Sconce" />
+                    android:text="Ceiling" />
 
                 <TextView
-                    android:id="@+id/tvSconce"
+                    android:id="@+id/tvCeiling"
                     style="@style/translate"
-                    android:text="Бра" />
+                    android:text="Потолок" />
 
                 <ImageView
-                    android:id="@+id/ivSconce"
+                    android:id="@+id/ivCeiling"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -149,17 +149,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/cover"
+                    android:id="@+id/wall"
                     style="@style/english"
-                    android:text="Cover" />
+                    android:text="Wall" />
 
                 <TextView
-                    android:id="@+id/tvCover"
+                    android:id="@+id/tvWall"
                     style="@style/translate"
-                    android:text="Покрывало" />
+                    android:text="Стена" />
 
                 <ImageView
-                    android:id="@+id/ivCover"
+                    android:id="@+id/ivWall"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -173,17 +173,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/pillow"
+                    android:id="@+id/floors"
                     style="@style/english"
-                    android:text="Pillow" />
+                    android:text="Floor" />
 
                 <TextView
-                    android:id="@+id/tvPillow"
+                    android:id="@+id/tvFloors"
                     style="@style/translate"
-                    android:text="Подушка" />
+                    android:text="Этаж" />
 
                 <ImageView
-                    android:id="@+id/ivPillow"
+                    android:id="@+id/ivFloors"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -197,17 +197,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/blanket"
+                    android:id="@+id/roof"
                     style="@style/english"
-                    android:text="Blanket" />
+                    android:text="Roof" />
 
                 <TextView
-                    android:id="@+id/tvBlanket"
+                    android:id="@+id/tvRoof"
                     style="@style/translate"
-                    android:text="Одеяло" />
+                    android:text="Крыша" />
 
                 <ImageView
-                    android:id="@+id/ivBlanket"
+                    android:id="@+id/ivRoof"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -221,17 +221,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/sheet"
+                    android:id="@+id/basement"
                     style="@style/english"
-                    android:text="Sheet" />
+                    android:text="Basement" />
 
                 <TextView
-                    android:id="@+id/tvSheet"
+                    android:id="@+id/tvBasement"
                     style="@style/translate"
-                    android:text="Простынь" />
+                    android:text="Подвал" />
 
                 <ImageView
-                    android:id="@+id/ivSheet"
+                    android:id="@+id/ivBasement"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -245,17 +245,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/duvetcover"
+                    android:id="@+id/stairs"
                     style="@style/english"
-                    android:text="Duvet cover" />
+                    android:text="Stairs" />
 
                 <TextView
-                    android:id="@+id/tvDuvetcover"
+                    android:id="@+id/tvStairs"
                     style="@style/translate"
-                    android:text="Пододеяльник" />
+                    android:text="Лестница" />
 
                 <ImageView
-                    android:id="@+id/ivDuvetcover"
+                    android:id="@+id/ivStairs"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -269,17 +269,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/pillowcase"
+                    android:id="@+id/elevator"
                     style="@style/english"
-                    android:text="Pillowcase" />
+                    android:text="Elevator" />
 
                 <TextView
-                    android:id="@+id/tvPillowcase"
+                    android:id="@+id/tvElevator"
                     style="@style/translate"
-                    android:text="Наволочка" />
+                    android:text="Лифт" />
 
                 <ImageView
-                    android:id="@+id/ivPillowcase"
+                    android:id="@+id/ivElevator"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -293,17 +293,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/curtains"
+                    android:id="@+id/balcony"
                     style="@style/english"
-                    android:text="Curtains" />
+                    android:text="Balcony" />
 
                 <TextView
-                    android:id="@+id/tvCurtains"
+                    android:id="@+id/tvBalcony"
                     style="@style/translate"
-                    android:text="Шторы" />
+                    android:text="Балкон" />
 
                 <ImageView
-                    android:id="@+id/ivCurtains"
+                    android:id="@+id/ivBalcony"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -317,17 +317,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tulle"
+                    android:id="@+id/loggia"
                     style="@style/english"
-                    android:text="Tulle" />
+                    android:text="Loggia" />
 
                 <TextView
-                    android:id="@+id/tvTulle"
+                    android:id="@+id/tvLoggia"
                     style="@style/translate"
-                    android:text="Тюль" />
+                    android:text="Лоджия" />
 
                 <ImageView
-                    android:id="@+id/ivTulle"
+                    android:id="@+id/ivLoggia"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -341,17 +341,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/carpet"
+                    android:id="@+id/entrance"
                     style="@style/english"
-                    android:text="Carpet" />
+                    android:text="Entrance" />
 
                 <TextView
-                    android:id="@+id/tvCarpet"
+                    android:id="@+id/tvEntrance"
                     style="@style/translate"
-                    android:text="Ковер" />
+                    android:text="Подъeзд" />
 
                 <ImageView
-                    android:id="@+id/ivCarpet"
+                    android:id="@+id/ivEntrance"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -365,17 +365,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/sofa"
+                    android:id="@+id/veranda"
                     style="@style/english"
-                    android:text="Sofa" />
+                    android:text="Veranda" />
 
                 <TextView
-                    android:id="@+id/tvSofa"
+                    android:id="@+id/tvVeranda"
                     style="@style/translate"
-                    android:text="Диван" />
+                    android:text="Веранда" />
 
                 <ImageView
-                    android:id="@+id/ivSofa"
+                    android:id="@+id/ivVeranda"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -389,17 +389,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/lamp"
+                    android:id="@+id/porch"
                     style="@style/english"
-                    android:text="Lamp" />
+                    android:text="Porch" />
 
                 <TextView
-                    android:id="@+id/tvLamp"
+                    android:id="@+id/tvPorch"
                     style="@style/translate"
-                    android:text="Лампа" />
+                    android:text="Крыльцо" />
 
                 <ImageView
-                    android:id="@+id/ivLamp"
+                    android:id="@+id/ivPorch"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -413,17 +413,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/mirror"
+                    android:id="@+id/steps"
                     style="@style/english"
-                    android:text="Mirror" />
+                    android:text="Steps" />
 
                 <TextView
-                    android:id="@+id/tvMirror"
+                    android:id="@+id/tvSteps"
                     style="@style/translate"
-                    android:text="Зеркало" />
+                    android:text="Ступеньки" />
 
                 <ImageView
-                    android:id="@+id/ivMirror"
+                    android:id="@+id/ivSteps"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -437,17 +437,65 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/wardrobe"
+                    android:id="@+id/railing"
                     style="@style/english"
-                    android:text="Wardrobe" />
+                    android:text="Railing" />
 
                 <TextView
-                    android:id="@+id/tvWardrobe"
+                    android:id="@+id/tvRailing"
                     style="@style/translate"
-                    android:text="Гардеробная" />
+                    android:text="Перила" />
 
                 <ImageView
-                    android:id="@+id/ivWardrobe"
+                    android:id="@+id/ivRailing"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/corridor"
+                    style="@style/english"
+                    android:text="Corridor" />
+
+                <TextView
+                    android:id="@+id/tvCorridor"
+                    style="@style/translate"
+                    android:text="Коридор" />
+
+                <ImageView
+                    android:id="@+id/ivCorridor"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/landing"
+                    style="@style/english"
+                    android:text="Landing" />
+
+                <TextView
+                    android:id="@+id/tvLanding"
+                    style="@style/translate"
+                    android:text="Лестничная площадка" />
+
+                <ImageView
+                    android:id="@+id/ivLanding"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
