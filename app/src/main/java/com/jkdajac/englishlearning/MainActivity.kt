@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         fabNewWords.setOnClickListener {
             val intent = Intent(this, NewWordsActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
         }
 
         btClose.setOnClickListener {
