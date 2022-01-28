@@ -115,22 +115,27 @@ class NewWordsActivity : AppCompatActivity() {
                         startActivity(intent)
                         animate()
                     }
-                    11 -> {
-                        val intent = Intent(this@NewWordsActivity, TransportActivity::class.java)
+                    11-> {
+                        val intent = Intent(this@NewWordsActivity, BerryActivity::class.java)
                         startActivity(intent)
                         animate()
                     }
                     12 -> {
-                        val intent = Intent(this@NewWordsActivity, ToolsActivity::class.java)
+                        val intent = Intent(this@NewWordsActivity, TransportActivity::class.java)
                         startActivity(intent)
                         animate()
                     }
                     13 -> {
-                        val intent = Intent(this@NewWordsActivity, BuildingActivity::class.java)
+                        val intent = Intent(this@NewWordsActivity, ToolsActivity::class.java)
                         startActivity(intent)
                         animate()
                     }
                     14 -> {
+                        val intent = Intent(this@NewWordsActivity, BuildingActivity::class.java)
+                        startActivity(intent)
+                        animate()
+                    }
+                    15 -> {
                         val intent = Intent(this@NewWordsActivity, VerbsActivity::class.java)
                         startActivity(intent)
                         animate()

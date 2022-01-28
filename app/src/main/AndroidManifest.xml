@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning">
         <activity
+            android:name=".newwords.words.BerryActivity"
+            android:exported="false" />
+        <activity
             android:name=".newwords.words.VerbsActivity"
             android:exported="false" />
         <activity

@@ -158,6 +158,13 @@ class BuildingActivity : AppCompatActivity() {
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
+        ivApartment.setOnClickListener {
+            val english : String = apartment.text.toString()
+            val translate : String = tvApartment.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
     }
     override fun onBackPressed() {
         super.onBackPressed()
