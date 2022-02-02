@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_700"
-    tools:context=".newwords.words.ToolsActivity">
+    tools:context=".newwords.words.SeaActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,17 +29,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/hammer"
+                    android:id="@+id/ocean"
                     style="@style/english"
-                    android:text="Hammer" />
+                    android:text="Ocean" />
 
                 <TextView
-                    android:id="@+id/tvHammer"
+                    android:id="@+id/tvOcean"
                     style="@style/translate"
-                    android:text="Молоток" />
+                    android:text="Океан" />
 
                 <ImageView
-                    android:id="@+id/ivHammer"
+                    android:id="@+id/ivOcean"
                     style="@style/image_to_main"
                     android:layout_height="match_parent"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -53,17 +53,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/screwdrivers"
+                    android:id="@+id/sea"
                     style="@style/english"
-                    android:text="Screwdriver" />
+                    android:text="Sea" />
 
                 <TextView
-                    android:id="@+id/tvScrewdrivers"
+                    android:id="@+id/tvSea"
                     style="@style/translate"
-                    android:text="Отвертка" />
+                    android:text="Море" />
 
                 <ImageView
-                    android:id="@+id/ivScrewdrivers"
+                    android:id="@+id/ivSea"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -77,17 +77,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/pliers"
+                    android:id="@+id/river"
                     style="@style/english"
-                    android:text="Pliers" />
+                    android:text="River" />
 
                 <TextView
-                    android:id="@+id/tvPliers"
+                    android:id="@+id/tvRiver"
                     style="@style/translate"
-                    android:text="Плоскогубцы" />
+                    android:text="Река" />
 
                 <ImageView
-                    android:id="@+id/ivPliers"
+                    android:id="@+id/ivRiver"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -101,17 +101,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/wrenchs"
+                    android:id="@+id/lake"
                     style="@style/english"
-                    android:text="Wrench" />
+                    android:text="Lake" />
 
                 <TextView
-                    android:id="@+id/tvWrenchs"
+                    android:id="@+id/tvLake"
                     style="@style/translate"
-                    android:text="Гаечный ключ" />
+                    android:text="Озеро" />
 
                 <ImageView
-                    android:id="@+id/ivWrenchs"
+                    android:id="@+id/ivLake"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -125,17 +125,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/axe"
+                    android:id="@+id/iceberg"
                     style="@style/english"
-                    android:text="Axe" />
+                    android:text="Iceberg" />
 
                 <TextView
-                    android:id="@+id/tvAxe"
+                    android:id="@+id/tvIceberg"
                     style="@style/translate"
-                    android:text="Топор" />
+                    android:text="Айсберг" />
 
                 <ImageView
-                    android:id="@+id/ivAxe"
+                    android:id="@+id/ivIceberg"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -149,17 +149,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/saw"
+                    android:id="@+id/cape"
                     style="@style/english"
-                    android:text="Saw" />
+                    android:text="Cape" />
 
                 <TextView
-                    android:id="@+id/tvSaw"
+                    android:id="@+id/tvCape"
                     style="@style/translate"
-                    android:text="Пила" />
+                    android:text="Мыс" />
 
                 <ImageView
-                    android:id="@+id/ivSaw"
+                    android:id="@+id/ivCape"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -173,17 +173,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/nail"
+                    android:id="@+id/fjord"
                     style="@style/english"
-                    android:text="Nail" />
+                    android:text="Fjord" />
 
                 <TextView
-                    android:id="@+id/tvNail"
+                    android:id="@+id/tvFjord"
                     style="@style/translate"
-                    android:text="Гвоздь" />
+                    android:text="Фьорд" />
 
                 <ImageView
-                    android:id="@+id/ivNail"
+                    android:id="@+id/ivFjord"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -197,17 +197,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/selftappingscrew"
+                    android:id="@+id/bay"
                     style="@style/english"
-                    android:text="Self-tapping screw" />
+                    android:text="Bay" />
 
                 <TextView
-                    android:id="@+id/tvSelftappingscrew"
+                    android:id="@+id/tvBay"
                     style="@style/translate"
-                    android:text="Саморез" />
+                    android:text="Залив" />
 
                 <ImageView
-                    android:id="@+id/ivSelftappingscrew"
+                    android:id="@+id/ivBay"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -221,17 +221,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/sandpaper"
+                    android:id="@+id/basin"
                     style="@style/english"
-                    android:text="Sandpaper" />
+                    android:text="Basin" />
 
                 <TextView
-                    android:id="@+id/tvSandpaper"
+                    android:id="@+id/tvBasin"
                     style="@style/translate"
-                    android:text="Наждачная бумага" />
+                    android:text="Бассейн" />
 
                 <ImageView
-                    android:id="@+id/ivSandpaper"
+                    android:id="@+id/ivBasin"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -245,17 +245,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/drill"
+                    android:id="@+id/waterfall"
                     style="@style/english"
-                    android:text="Drill" />
+                    android:text="Waterfall" />
 
                 <TextView
-                    android:id="@+id/tvDrill"
+                    android:id="@+id/tvWaterfall"
                     style="@style/translate"
-                    android:text="Дрель" />
+                    android:text="Водопад" />
 
                 <ImageView
-                    android:id="@+id/ivDrill"
+                    android:id="@+id/ivWaterfall"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -269,17 +269,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/screwdriver"
+                    android:id="@+id/strait"
                     style="@style/english"
-                    android:text="Screwdriver" />
+                    android:text="Strait" />
 
                 <TextView
-                    android:id="@+id/tvScrewdriver"
+                    android:id="@+id/tvStrait"
                     style="@style/translate"
-                    android:text="Шуруповерт" />
+                    android:text="Пролив" />
 
                 <ImageView
-                    android:id="@+id/ivScrewdriver"
+                    android:id="@+id/ivStrait"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -293,17 +293,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/level"
+                    android:id="@+id/channel"
                     style="@style/english"
-                    android:text="Level" />
+                    android:text="Channel" />
 
                 <TextView
-                    android:id="@+id/tvLevel"
+                    android:id="@+id/tvChannel"
                     style="@style/translate"
-                    android:text="Уровень" />
+                    android:text="Канал" />
 
                 <ImageView
-                    android:id="@+id/ivLevel"
+                    android:id="@+id/ivChannel"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -317,17 +317,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/vise"
+                    android:id="@+id/swamp"
                     style="@style/english"
-                    android:text="Vise" />
+                    android:text="Swamp" />
 
                 <TextView
-                    android:id="@+id/tvVise"
+                    android:id="@+id/tvSwamp"
                     style="@style/translate"
-                    android:text="Тиски" />
+                    android:text="Болото" />
 
                 <ImageView
-                    android:id="@+id/ivVise"
+                    android:id="@+id/ivSwamp"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -341,17 +341,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/router"
+                    android:id="@+id/beach"
                     style="@style/english"
-                    android:text="Router" />
+                    android:text="Beach" />
 
                 <TextView
-                    android:id="@+id/tvRouter"
+                    android:id="@+id/tvBeach"
                     style="@style/translate"
-                    android:text="Фрезер" />
+                    android:text="Пляж" />
 
                 <ImageView
-                    android:id="@+id/ivRouter"
+                    android:id="@+id/ivBeach"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -365,17 +365,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/glue"
+                    android:id="@+id/peninsula"
                     style="@style/english"
-                    android:text="Glue" />
+                    android:text="Peninsula" />
 
                 <TextView
-                    android:id="@+id/tvGlue"
+                    android:id="@+id/tvPeninsula"
                     style="@style/translate"
-                    android:text="Клей" />
+                    android:text="Полуостров" />
 
                 <ImageView
-                    android:id="@+id/ivGlue"
+                    android:id="@+id/ivPeninsula"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -389,17 +389,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/bolt"
+                    android:id="@+id/island"
                     style="@style/english"
-                    android:text="Bolt" />
+                    android:text="Island" />
 
                 <TextView
-                    android:id="@+id/tvBolt"
+                    android:id="@+id/tvIsland"
                     style="@style/translate"
-                    android:text="Болт" />
+                    android:text="Остров" />
 
                 <ImageView
-                    android:id="@+id/ivBolt"
+                    android:id="@+id/ivIsland"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -413,17 +413,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/screws"
+                    android:id="@+id/archipelago"
                     style="@style/english"
-                    android:text="Screw" />
+                    android:text="Archipelago" />
 
                 <TextView
-                    android:id="@+id/tvScrews"
+                    android:id="@+id/tvArchipelago"
                     style="@style/translate"
-                    android:text="Гайка" />
+                    android:text="Архипелаг" />
 
                 <ImageView
-                    android:id="@+id/ivScrews"
+                    android:id="@+id/ivArchipelago"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -437,17 +437,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/wrench"
+                    android:id="@+id/coast"
                     style="@style/english"
-                    android:text="Wrench" />
+                    android:text="Coast" />
 
                 <TextView
-                    android:id="@+id/tvWrench"
+                    android:id="@+id/tvCoast"
                     style="@style/translate"
-                    android:text="Разводной ключ" />
+                    android:text="Побережье" />
 
                 <ImageView
-                    android:id="@+id/ivWrench"
+                    android:id="@+id/ivCoast"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -461,17 +461,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/hacksaw"
+                    android:id="@+id/gulf"
                     style="@style/english"
-                    android:text="Hacksaw" />
+                    android:text="Gulf" />
 
                 <TextView
-                    android:id="@+id/tvHacksaw"
+                    android:id="@+id/tvGulf"
                     style="@style/translate"
-                    android:text="Ножовка" />
+                    android:text="Залив" />
 
                 <ImageView
-                    android:id="@+id/ivHacksaw"
+                    android:id="@+id/ivGulf"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -485,17 +485,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/jigsaw"
+                    android:id="@+id/delta"
                     style="@style/english"
-                    android:text="Jigsaw" />
+                    android:text="Delta" />
 
                 <TextView
-                    android:id="@+id/tvJigsaw"
+                    android:id="@+id/tvDelta"
                     style="@style/translate"
-                    android:text="Лобзик" />
+                    android:text="Дельта" />
 
                 <ImageView
-                    android:id="@+id/ivJigsaw"
+                    android:id="@+id/ivDelta"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -509,17 +509,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/screw"
+                    android:id="@+id/oasis"
                     style="@style/english"
-                    android:text="Screw" />
+                    android:text="Oasis" />
 
                 <TextView
-                    android:id="@+id/tvScrew"
+                    android:id="@+id/tvOasis"
                     style="@style/translate"
-                    android:text="Шуруп" />
+                    android:text="Оазис" />
 
                 <ImageView
-                    android:id="@+id/ivScrew"
+                    android:id="@+id/ivOasis"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -533,17 +533,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/wire"
+                    android:id="@+id/geyser"
                     style="@style/english"
-                    android:text="Wire" />
+                    android:text="Geyser" />
 
                 <TextView
-                    android:id="@+id/tvWire"
+                    android:id="@+id/tvGeyser"
                     style="@style/translate"
-                    android:text="Проволока" />
+                    android:text="Гейзер" />
 
                 <ImageView
-                    android:id="@+id/ivWire"
+                    android:id="@+id/ivGeyser"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -557,17 +557,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/chisel"
+                    android:id="@+id/glacier"
                     style="@style/english"
-                    android:text="Chisel" />
+                    android:text="Glacier" />
 
                 <TextView
-                    android:id="@+id/tvChisel"
+                    android:id="@+id/tvGlacier"
                     style="@style/translate"
-                    android:text="Зубило" />
+                    android:text="Ледник" />
 
                 <ImageView
-                    android:id="@+id/ivChisel"
+                    android:id="@+id/ivGlacier"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -581,17 +581,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/ticks"
+                    android:id="@+id/flow"
                     style="@style/english"
-                    android:text="Ticks" />
+                    android:text="Flow" />
 
                 <TextView
-                    android:id="@+id/tvTicks"
+                    android:id="@+id/tvFlow"
                     style="@style/translate"
-                    android:text="Клещи" />
+                    android:text="Течение" />
 
                 <ImageView
-                    android:id="@+id/ivTicks"
+                    android:id="@+id/ivFlow"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -605,17 +605,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/washer"
+                    android:id="@+id/depth"
                     style="@style/english"
-                    android:text="Washer" />
+                    android:text="Depth" />
 
                 <TextView
-                    android:id="@+id/tvWasher"
+                    android:id="@+id/tvDepth"
                     style="@style/translate"
-                    android:text="Шайба" />
+                    android:text="Глубина" />
 
                 <ImageView
-                    android:id="@+id/ivWasher"
+                    android:id="@+id/ivDepth"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -629,17 +629,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/clamp"
+                    android:id="@+id/wave"
                     style="@style/english"
-                    android:text="Clamp" />
+                    android:text="Wave" />
 
                 <TextView
-                    android:id="@+id/tvClamp"
+                    android:id="@+id/tvWave"
                     style="@style/translate"
-                    android:text="Струбцина" />
+                    android:text="Волна" />
 
                 <ImageView
-                    android:id="@+id/ivClamp"
+                    android:id="@+id/ivWave"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -653,17 +653,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/roulette"
+                    android:id="@+id/surf"
                     style="@style/english"
-                    android:text="Roulette" />
+                    android:text="Surf" />
 
                 <TextView
-                    android:id="@+id/tvRoulette"
+                    android:id="@+id/tvSurf"
                     style="@style/translate"
-                    android:text="Рулетка" />
+                    android:text="Прибой" />
 
                 <ImageView
-                    android:id="@+id/ivRoulette"
+                    android:id="@+id/ivSurf"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />
@@ -677,17 +677,41 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/calipers"
+                    android:id="@+id/stream"
                     style="@style/english"
-                    android:text="Calipers" />
+                    android:text="Stream" />
 
                 <TextView
-                    android:id="@+id/tvCalipers"
+                    android:id="@+id/tvStream"
                     style="@style/translate"
-                    android:text="Штангенциркуль" />
+                    android:text="Ручей" />
 
                 <ImageView
-                    android:id="@+id/ivCalipers"
+                    android:id="@+id/ivStream"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spring"
+                    style="@style/english"
+                    android:text="Spring" />
+
+                <TextView
+                    android:id="@+id/tvSpring"
+                    style="@style/translate"
+                    android:text="Родник" />
+
+                <ImageView
+                    android:id="@+id/ivSpring"
                     style="@style/image_to_main"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/ic_menu_directions" />

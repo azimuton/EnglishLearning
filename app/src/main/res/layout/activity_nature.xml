@@ -598,6 +598,198 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/prairie"
+                    style="@style/english"
+                    android:text="Prairie" />
+
+                <TextView
+                    android:id="@+id/tvPrairie"
+                    style="@style/translate"
+                    android:text="Прерия" />
+
+                <ImageView
+                    android:id="@+id/ivPrairie"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rainforest"
+                    style="@style/english"
+                    android:text="Rain Forest" />
+
+                <TextView
+                    android:id="@+id/tvRainforest"
+                    style="@style/translate"
+                    android:text="Тропический лес" />
+
+                <ImageView
+                    android:id="@+id/ivRainforest"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jungle"
+                    style="@style/english"
+                    android:text="Jungle" />
+
+                <TextView
+                    android:id="@+id/tvJungle"
+                    style="@style/translate"
+                    android:text="Джунгли" />
+
+                <ImageView
+                    android:id="@+id/ivJungle"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mesa"
+                    style="@style/english"
+                    android:text="Mesa" />
+
+                <TextView
+                    android:id="@+id/tvMesa"
+                    style="@style/translate"
+                    android:text="Столовая гора" />
+
+                <ImageView
+                    android:id="@+id/ivMesa"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/plateau"
+                    style="@style/english"
+                    android:text="Plateau" />
+
+                <TextView
+                    android:id="@+id/tvPlateau"
+                    style="@style/translate"
+                    android:text="Плато" />
+
+                <ImageView
+                    android:id="@+id/ivPlateau"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dune"
+                    style="@style/english"
+                    android:text="Dune" />
+
+                <TextView
+                    android:id="@+id/tvDune"
+                    style="@style/translate"
+                    android:text="Дюна" />
+
+                <ImageView
+                    android:id="@+id/ivDune"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/canyon"
+                    style="@style/english"
+                    android:text="Canyon" />
+
+                <TextView
+                    android:id="@+id/tvCanyon"
+                    style="@style/translate"
+                    android:text="Каньон" />
+
+                <ImageView
+                    android:id="@+id/ivCanyon"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cave"
+                    style="@style/english"
+                    android:text="Cave" />
+
+                <TextView
+                    android:id="@+id/tvCave"
+                    style="@style/translate"
+                    android:text="Пещера" />
+
+                <ImageView
+                    android:id="@+id/ivCave"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

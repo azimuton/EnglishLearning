@@ -9,6 +9,7 @@ import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.Word
 import com.jkdajac.englishlearning.newwords.NewWordsActivity
 import kotlinx.android.synthetic.main.activity_nature.*
+import kotlinx.android.synthetic.main.activity_tools.*
 
 class ToolsActivity : AppCompatActivity() {
     lateinit var wordDatabase: AppDatabase
@@ -17,170 +18,198 @@ class ToolsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tools)
         wordDatabase = AppDatabase.getDatabase(this)
 
-        ivNature.setOnClickListener {
-            val english : String = nature.text.toString()
-            val translate : String = tvNature.text.toString()
+        ivHammer.setOnClickListener {
+            val english : String = hammer.text.toString()
+            val translate : String = tvHammer.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivLand.setOnClickListener {
-            val english : String = land.text.toString()
-            val translate : String = tvLand.text.toString()
+        ivScrewdrivers.setOnClickListener {
+            val english : String = screwdrivers.text.toString()
+            val translate : String = tvScrewdrivers.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivMountain.setOnClickListener {
-            val english : String = mountain.text.toString()
-            val translate : String = tvMountain.text.toString()
+        ivPliers.setOnClickListener {
+            val english : String = pliers.text.toString()
+            val translate : String = tvPliers.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivTree.setOnClickListener {
-            val english : String = tree.text.toString()
-            val translate : String = tvTree.text.toString()
+        ivWrenchs.setOnClickListener {
+            val english : String = wrenchs.text.toString()
+            val translate : String = tvWrenchs.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivGrass.setOnClickListener {
-            val english : String = grass.text.toString()
-            val translate : String = tvGrass.text.toString()
+        ivAxe.setOnClickListener {
+            val english : String = axe.text.toString()
+            val translate : String = tvAxe.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivBush.setOnClickListener {
-            val english : String = bush.text.toString()
-            val translate : String = tvBush.text.toString()
+        ivSaw.setOnClickListener {
+            val english : String = saw.text.toString()
+            val translate : String = tvSaw.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivLandscapes.setOnClickListener {
-            val english : String = landscapes.text.toString()
-            val translate : String = tvLandscapes.text.toString()
+        ivNail.setOnClickListener {
+            val english : String = nail.text.toString()
+            val translate : String = tvNail.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivPlain.setOnClickListener {
-            val english : String = plain.text.toString()
-            val translate : String = tvPlain.text.toString()
+        ivSelftappingscrew.setOnClickListener {
+            val english : String = selftappingscrew.text.toString()
+            val translate : String = tvSelftappingscrew.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivForest.setOnClickListener {
-            val english : String = forest.text.toString()
-            val translate : String = tvForest.text.toString()
+        ivSandpaper.setOnClickListener {
+            val english : String = sandpaper.text.toString()
+            val translate : String = tvSandpaper.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivDesert.setOnClickListener {
-            val english : String = desert.text.toString()
-            val translate : String = tvDesert.text.toString()
+        ivDrill.setOnClickListener {
+            val english : String = drill.text.toString()
+            val translate : String = tvDrill.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivField.setOnClickListener {
-            val english : String = field.text.toString()
-            val translate : String = tvField.text.toString()
+        ivScrewdriver.setOnClickListener {
+            val english : String = screwdriver.text.toString()
+            val translate : String = tvScrewdriver.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivGlade.setOnClickListener {
-            val english : String = glade.text.toString()
-            val translate : String = tvGlade.text.toString()
+        ivLevel.setOnClickListener {
+            val english : String = level.text.toString()
+            val translate : String = tvLevel.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivBranch.setOnClickListener {
-            val english : String = branch.text.toString()
-            val translate : String = tvBranch.text.toString()
+        ivVise.setOnClickListener {
+            val english : String = vise.text.toString()
+            val translate : String = tvVise.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivElevation.setOnClickListener {
-            val english : String = elevation.text.toString()
-            val translate : String = tvElevation.text.toString()
+        ivRouter.setOnClickListener {
+            val english : String = router.text.toString()
+            val translate : String = tvRouter.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivLowland.setOnClickListener {
-            val english : String = lowland.text.toString()
-            val translate : String = tvLowland.text.toString()
+        ivGlue.setOnClickListener {
+            val english : String = glue.text.toString()
+            val translate : String = tvGlue.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivCliff.setOnClickListener {
-            val english : String = cliff.text.toString()
-            val translate : String = tvCliff.text.toString()
+        ivBolt.setOnClickListener {
+            val english : String = bolt.text.toString()
+            val translate : String = tvBolt.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivCareer.setOnClickListener {
-            val english : String = career.text.toString()
-            val translate : String = tvCareer.text.toString()
+        ivScrews.setOnClickListener {
+            val english : String = screws.text.toString()
+            val translate : String = tvScrews.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivLandscape.setOnClickListener {
-            val english : String = landscape.text.toString()
-            val translate : String = tvLandscape.text.toString()
+        ivWrench.setOnClickListener {
+            val english : String = wrench.text.toString()
+            val translate : String = tvWrench.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivValley.setOnClickListener {
-            val english : String = valley.text.toString()
-            val translate : String = tvValley.text.toString()
+        ivHacksaw.setOnClickListener {
+            val english : String = hacksaw.text.toString()
+            val translate : String = tvHacksaw.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivSand.setOnClickListener {
-            val english : String = sand.text.toString()
-            val translate : String = tvSand.text.toString()
+        ivJigsaw.setOnClickListener {
+            val english : String = jigsaw.text.toString()
+            val translate : String = tvJigsaw.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivRock.setOnClickListener {
-            val english : String = rock.text.toString()
-            val translate : String = tvRock.text.toString()
+        ivScrew.setOnClickListener {
+            val english : String = screw.text.toString()
+            val translate : String = tvScrew.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivSheet.setOnClickListener {
-            val english : String = sheet.text.toString()
-            val translate : String = tvSheet.text.toString()
+        ivWire.setOnClickListener {
+            val english : String = wire.text.toString()
+            val translate : String = tvWire.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivHill.setOnClickListener {
-            val english : String = hill.text.toString()
-            val translate : String = tvHill.text.toString()
+        ivChisel.setOnClickListener {
+            val english : String = chisel.text.toString()
+            val translate : String = tvChisel.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
         }
-        ivSoil.setOnClickListener {
-            val english : String = soil.text.toString()
-            val translate : String = tvSoil.text.toString()
+        ivTicks.setOnClickListener {
+            val english : String = ticks.text.toString()
+            val translate : String = tvTicks.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivWasher.setOnClickListener {
+            val english : String = washer.text.toString()
+            val translate : String = tvWasher.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivClamp.setOnClickListener {
+            val english : String = clamp.text.toString()
+            val translate : String = tvClamp.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivRoulette.setOnClickListener {
+            val english : String = roulette.text.toString()
+            val translate : String = tvRoulette.text.toString()
+            val word = Word(englishWord = english, translateWord = translate)
+            wordDatabase.wordDao().insertWord(word)
+            Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()
+        }
+        ivCalipers.setOnClickListener {
+            val english : String = calipers.text.toString()
+            val translate : String = tvCalipers.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()

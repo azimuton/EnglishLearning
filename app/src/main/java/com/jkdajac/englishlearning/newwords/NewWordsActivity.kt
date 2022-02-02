@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.SearchView
-import android.widget.SearchView.OnQueryTextListener
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.jkdajac.englishlearning.MainActivity
@@ -140,6 +139,16 @@ class NewWordsActivity : AppCompatActivity() {
                         startActivity(intent)
                         animate()
                     }
+                    16 -> {
+                        val intent = Intent(this@NewWordsActivity, SeaActivity::class.java)
+                        startActivity(intent)
+                        animate()
+                    }
+                    17 -> {
+                        val intent = Intent(this@NewWordsActivity, WeatherActivity::class.java)
+                        startActivity(intent)
+                        animate()
+                    }
                 }
             }
         }
@@ -155,17 +164,5 @@ class NewWordsActivity : AppCompatActivity() {
         overridePendingTransition(0, R.anim.open_activity)
         finish()
     }
-
 }
 
-
-
-//    fun copyWords(){
-//        val english : String = tvEnglishWord.text.toString()
-//        val translate : String = tvTranslateWord.text.toString()
-//        val word = Word(englishWord = english, translateWord = translate)
-//        wordDatabase.wordDao().insertWord(word)
-//
-//        val intent = Intent(this, MainActivity::class.java)
-//        startActivity(intent)
-//    }

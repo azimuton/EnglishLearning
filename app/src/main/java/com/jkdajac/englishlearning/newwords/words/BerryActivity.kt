@@ -1,13 +1,15 @@
 package com.jkdajac.englishlearning.newwords.words
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.widget.ListView
 import android.widget.Toast
-import com.jkdajac.englishlearning.MainActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.jkdajac.englishlearning.R
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.Word
+import com.jkdajac.englishlearning.newwords.NewWordsActivity
 import kotlinx.android.synthetic.main.activity_berry.*
 import kotlinx.android.synthetic.main.activity_fruits.*
 import kotlinx.android.synthetic.main.activity_home_animals.*
@@ -183,7 +185,7 @@ class BerryActivity : AppCompatActivity() {
     }
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this, MainActivity :: class.java)
+        val intent = Intent(this, NewWordsActivity :: class.java)
         startActivity(intent)
         overridePendingTransition(0, R.anim.open_activity)
         finish()

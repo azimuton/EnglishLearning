@@ -95,8 +95,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/etEnglishWord"
-        app:layout_constraintStart_toStartOf="@+id/etEnglishWord"
+        app:layout_constraintEnd_toStartOf="@+id/fabNewWords"
+        app:layout_constraintStart_toEndOf="@+id/ivFoto"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck" />
@@ -171,6 +171,15 @@
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/etTranslateWord"
+        app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

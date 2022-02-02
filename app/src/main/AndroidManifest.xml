@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning">
         <activity
+            android:name=".FotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".newwords.words.SeaActivity"
+            android:exported="false" />
+        <activity
             android:name=".newwords.words.BerryActivity"
             android:exported="false" />
         <activity
@@ -56,9 +65,6 @@
             android:exported="false" />
         <activity
             android:name=".newwords.words.FamilyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".newwords.NewWordsActivity"
             android:exported="false" />
         <activity
             android:name=".newwords.NewWordsActivity"
