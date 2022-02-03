@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishLearning">
         <activity
-            android:name=".FotoActivity"
+            android:name=".foto.FotoActivity"
             android:exported="false" />
         <activity
             android:name=".newwords.words.WeatherActivity"

@@ -11,6 +11,7 @@ import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.Word
+import com.jkdajac.englishlearning.foto.FotoActivity
 import com.jkdajac.englishlearning.newwords.NewWordsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -25,6 +26,13 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        ivFoto.setOnClickListener {
+            val intent = Intent(this, FotoActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
+        }
 
         fabNewWords.setOnClickListener {
             val intent = Intent(this, NewWordsActivity::class.java)
