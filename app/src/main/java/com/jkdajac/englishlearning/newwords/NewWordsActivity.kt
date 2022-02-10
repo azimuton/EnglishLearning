@@ -28,7 +28,7 @@ class NewWordsActivity : AppCompatActivity() {
         searchViewNewWords.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 if(formuls.contains (query)){
-                    arrayAdapter.filter .filter (query)
+                    arrayAdapter.filter.filter (query)
                 }else{
                     Toast.makeText(this@NewWordsActivity ,"Соответствие не найдено",
                         Toast.LENGTH_SHORT ).show()
@@ -36,7 +36,7 @@ class NewWordsActivity : AppCompatActivity() {
                 return false
             }
             override fun onQueryTextChange(newText: String?): Boolean {
-                arrayAdapter.filter .filter (newText)
+                arrayAdapter.filter.filter (newText)
                 return false
             }
         })

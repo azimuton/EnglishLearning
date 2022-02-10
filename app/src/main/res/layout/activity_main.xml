@@ -90,8 +90,6 @@
         android:duplicateParentState="false"
         android:editable="false"
         android:ellipsize="none"
-        android:shadowColor="#F6BE15"
-        android:shadowRadius="20"
         android:text="Сохранить"
         android:textColor="@android:color/holo_orange_light"
         android:textSize="20sp"

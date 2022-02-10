@@ -6,13 +6,14 @@
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
     android:background="@drawable/circle"
-    android:elevation="10dp">
+    android:elevation="10dp"
+    android:paddingStart="8dp"
+    android:paddingTop="4dp">
 
     <TextView
         android:id="@+id/tvWord"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:elevation="30dp"
         android:padding="4dp"
         android:shadowColor="#0EFAF8"
@@ -22,15 +23,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ivOpenEyeLearned"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvTranslate"
-        android:layout_width="333dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:elevation="30dp"
@@ -57,11 +60,11 @@
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivOpenEyeLearned"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tvWord"
         app:layout_constraintTop_toTopOf="@+id/ivOpenEyeLearned"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/urna" />
+        app:srcCompat="@drawable/ur" />
 
     <ImageView
         android:id="@+id/ivCloseEyeLearned"
@@ -80,9 +83,10 @@
         android:layout_width="43dp"
         android:layout_height="35dp"
         android:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWord"
         app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearned"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/klipartz" />
+        app:layout_constraintTop_toTopOf="@+id/tvWord"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/eyess" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
