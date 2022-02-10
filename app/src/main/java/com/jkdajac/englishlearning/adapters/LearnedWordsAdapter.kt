@@ -34,11 +34,9 @@ class LearnedWordsAdapter(
         holder.englishWord?.text = wordListtwo[position].englishWord
         holder.translateWord?.text = wordListtwo[position].translateWord
         holder.closeItem?.setOnClickListener {
-            //callback.closeItem(position)
             holder.translateWord?.visibility = View.GONE
         }
         holder.openItem?.setOnClickListener {
-            //callback.openItem(position)
             holder.translateWord?.visibility = View.VISIBLE
         }
         holder.deleteItem?.setOnClickListener {
@@ -71,8 +69,8 @@ class LearnedWordsAdapter(
         fun setData(item : LearnedWords){
             itemView.setOnClickListener {
                 val intent = Intent(context, LearnedWordsActivity :: class.java).apply {
-                    putExtra(MyIntentConstance.I_WORD_KEY, item.englishWord)
-                    putExtra(MyIntentConstance.I_TRANSLATE_KEY, item.translateWord)
+                    putExtra(MyIntentConstance.I_WORDL_KEY, item.englishWord)
+                    putExtra(MyIntentConstance.I_TRANSLATEL_KEY, item.translateWord)
                 }
                 context.startActivity(intent)
             }

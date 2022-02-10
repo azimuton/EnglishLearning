@@ -11,20 +11,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.englishlearning.MainActivity
 import com.jkdajac.englishlearning.MyIntentConstance
 import com.jkdajac.englishlearning.R
-import com.jkdajac.englishlearning.database.worddb.LearnedWords
 import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.item_view.view.*
 
-
-class WordAdapter(
-    val contextA: Context,
-    val wordList: List<Word>,
-    val callback: MainActivity
-) : RecyclerView.Adapter<WordAdapter.ViewHolder>(){
+class WordAdapter (val contextA: Context,
+                   val wordList: List<Word>,
+                   val callback: ViewHolder.ItemCallback
+): RecyclerView.Adapter<WordAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(contextA).inflate(R.layout.item_view, parent, false), contextA)
+        return ViewHolder(
+            LayoutInflater.from(contextA).inflate(R.layout.item_view, parent, false), contextA
+        )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -41,7 +40,6 @@ class WordAdapter(
         }
         holder.deleteItem?.setOnClickListener {
             callback.deleteItem(position)
-            //callback.wordDatabase.wordDao().copy()
         }
     }
 
@@ -49,38 +47,38 @@ class WordAdapter(
         return wordList.size
     }
 
-    class ViewHolder(itemView : View, contextV: Context)  : RecyclerView.ViewHolder(itemView){
 
+    class ViewHolder(itemView: View, contextV: Context) : RecyclerView.ViewHolder(itemView) {
         val context = contextV
         var englishWord: TextView? = null
         var translateWord: TextView? = null
-        var deleteItem : ImageView? = null
-        var openItem : ImageView? = null
-        var closeItem : ImageView? = null
+        var deleteItem: ImageView? = null
+        var openItem: ImageView? = null
+        var closeItem: ImageView? = null
 
 
-        init{
+        init {
             englishWord = itemView.tvWord
             translateWord = itemView.tvTranslate
             deleteItem = itemView.ivDelete
             openItem = itemView.ivOpenEyeLearned
             closeItem = itemView.ivCloseEyeLearned
         }
-        fun setData(item : Word){
+
+        interface ItemCallback {
+            fun deleteItem(index: Int)
+            fun openItem(index: Int)
+            fun closeItem(index: Int)
+        }
+
+        fun setData(item: Word) {
             itemView.setOnClickListener {
-                val intent = Intent(context, MainActivity :: class.java).apply {
+                val intent = Intent(context, MainActivity::class.java).apply {
                     putExtra(MyIntentConstance.I_WORD_KEY, item.englishWord)
                     putExtra(MyIntentConstance.I_TRANSLATE_KEY, item.translateWord)
                 }
                 context.startActivity(intent)
             }
-        }
-
-        interface ItemCallback {
-
-            fun deleteItem(index: Int)
-            fun openItem(index : Int)
-            fun closeItem(index : Int)
         }
     }
 }

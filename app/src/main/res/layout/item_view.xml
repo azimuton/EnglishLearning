@@ -5,26 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:background="@drawable/circle">
+    android:background="@drawable/circle"
+    android:elevation="10dp">
 
     <TextView
         android:id="@+id/tvWord"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:inputType="textImeMultiLine"
+        android:layout_marginStart="8dp"
+        android:elevation="30dp"
         android:padding="4dp"
-        android:text="Redemption"
+        android:shadowColor="#0EFAF8"
+        android:shadowRadius="30"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintEnd_toStartOf="@+id/ivOpenEyeLearned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvTranslate"
@@ -33,10 +33,11 @@
         android:layout_marginStart="70dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:elevation="30dp"
         android:gravity="start|center_vertical"
-        android:inputType="textMultiLine"
         android:padding="6dp"
-        android:text="искупление, спасение"
+        android:shadowColor="#E46EF8"
+        android:shadowRadius="30"
         android:textColor="#BE3E0303"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -50,9 +51,10 @@
 
     <ImageView
         android:id="@+id/ivDelete"
-        android:layout_width="55dp"
+        android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginBottom="4dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivOpenEyeLearned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.959"
@@ -66,6 +68,7 @@
         android:layout_width="43dp"
         android:layout_height="35dp"
         android:layout_marginBottom="8dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/ivOpenEyeLearned"
         app:layout_constraintEnd_toStartOf="@+id/ivDelete"
         app:layout_constraintTop_toTopOf="@+id/ivOpenEyeLearned"
@@ -76,11 +79,10 @@
         android:id="@+id/ivOpenEyeLearned"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvWord"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearned"
-        app:layout_constraintTop_toTopOf="@+id/tvWord"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/klipartz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

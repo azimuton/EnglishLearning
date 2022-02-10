@@ -3,6 +3,7 @@ package com.jkdajac.englishlearning
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         wordDatabase = AppDatabase.getDatabase(this)
         wordDatabase = AppDatabase.getDatabase(this)
         getData()
-        adapter = WordAdapter(this, wordList, this)
+        adapter = WordAdapter(this, wordList,this)
         rvWords.layoutManager = LinearLayoutManager(this)
         rvWords.adapter = adapter
 
@@ -93,8 +94,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                     val translateWord: String = etTranslateWord.text.toString()
 
                     val word = Word(englishWord = englishWord, translateWord = translateWord)
-                    Toast.makeText(this, "Поля заполнены!", Toast.LENGTH_LONG)
-                        .show()
+                    Toast.makeText(this, "Поля заполнены!", Toast.LENGTH_SHORT).show()
                     wordDatabase.wordDao().insertWord(word)
 
                     val intent = Intent(this, MainActivity::class.java)
@@ -114,6 +114,8 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             wordList.addAll(wordFromDb)
         }
 
+
+    @SuppressLint("NotifyDataSetChanged")
     override fun deleteItem(index: Int) {
 
         val addDialog = AlertDialog.Builder(this)
@@ -124,7 +126,6 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                 wordDatabase.wordDao().deleteWord(word)
                 getData()
                 adapter.notifyDataSetChanged()
-                //finish();
                 overridePendingTransition(0, 0);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
