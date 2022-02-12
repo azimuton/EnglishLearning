@@ -3,11 +3,11 @@ package com.jkdajac.englishlearning
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
@@ -60,9 +60,11 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         wordDatabase = AppDatabase.getDatabase(this)
         wordDatabase = AppDatabase.getDatabase(this)
         getData()
-        adapter = WordAdapter(this, wordList,this)
+        adapter = WordAdapter(this, this)
         rvWords.layoutManager = LinearLayoutManager(this)
         rvWords.adapter = adapter
+        adapter.submitList(wordList)
+
 
         wordDatabase = AppDatabase.getDatabase(this)
 
@@ -125,7 +127,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                 val word = wordList[index]
                 wordDatabase.wordDao().deleteWord(word)
                 getData()
-                adapter.notifyDataSetChanged()
+                adapter.submitList(wordList)
                 overridePendingTransition(0, 0);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
@@ -157,6 +159,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         }
     }
             }
+
 
 
 

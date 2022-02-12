@@ -35,9 +35,10 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         wordList = ArrayList<LearnedWords>()
         wordDatabase = AppDatabase.getDatabase(this)
         getData()
-        adapter = LearnedWordsAdapter(this, wordList, this)
+        adapter = LearnedWordsAdapter(this,  this)
         rvLernedWords.layoutManager = LinearLayoutManager(this)
         rvLernedWords.adapter = adapter
+        adapter.submitList(wordList)
 
         wordDatabase = AppDatabase.getDatabase(this)
 
@@ -68,7 +69,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
                 wordDatabase.learnedwordsDao().deleteLearnedWords(learnedWords)
                 tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
                 getData()
-                adapter.notifyDataSetChanged()
+                adapter.submitList(wordList)
                 overridePendingTransition(0, 0);
                 startActivity(intent);
                 overridePendingTransition(0, 0);

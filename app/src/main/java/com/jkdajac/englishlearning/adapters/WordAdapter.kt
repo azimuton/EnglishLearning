@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.englishlearning.MainActivity
 import com.jkdajac.englishlearning.MyIntentConstance
@@ -14,10 +15,10 @@ import com.jkdajac.englishlearning.R
 import com.jkdajac.englishlearning.database.worddb.Word
 import kotlinx.android.synthetic.main.item_view.view.*
 
-class WordAdapter (val contextA: Context,
-                   val wordList: List<Word>,
-                   val callback: ViewHolder.ItemCallback
-): RecyclerView.Adapter<WordAdapter.ViewHolder>() {
+class WordAdapter(
+    val contextA: Context,
+    val callback: ViewHolder.ItemCallback
+): ListAdapter<Word, WordAdapter.ViewHolder>(WordDiffCallback()) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,9 +28,9 @@ class WordAdapter (val contextA: Context,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.setData(wordList[position])
-        holder.englishWord?.text = wordList[position].englishWord
-        holder.translateWord?.text = wordList[position].translateWord
+        holder.setData(getItem(position))
+        holder.englishWord?.text = getItem(position).englishWord
+        holder.translateWord?.text = getItem(position).translateWord
         holder.closeItem?.setOnClickListener {
             callback.closeItem(position)
             holder.translateWord?.visibility = View.GONE
@@ -42,11 +43,6 @@ class WordAdapter (val contextA: Context,
             callback.deleteItem(position)
         }
     }
-
-    override fun getItemCount(): Int {
-        return wordList.size
-    }
-
 
     class ViewHolder(itemView: View, contextV: Context) : RecyclerView.ViewHolder(itemView) {
         val context = contextV

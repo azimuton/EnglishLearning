@@ -11,6 +11,7 @@
         android:theme="@style/Theme.EnglishLearning">
         <activity
             android:name=".foto.FotoActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".newwords.words.WeatherActivity"
@@ -79,6 +80,7 @@
         <activity android:name=".LearnedWordsActivity" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
     </application>
 
