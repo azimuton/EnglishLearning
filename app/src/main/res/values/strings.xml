@@ -2,23 +2,23 @@
     <string name="app_name">EnglishLearning</string>
     <string name="new_words_for_learning">Новые слова для изучения</string>
     <string-array name="names">
-        <item>Семья</item>
-        <item>Домашние животные</item>
-        <item>Дикие животные</item>
-        <item>Части тела</item>
-        <item>Кухня</item>
-        <item>Спальня</item>
         <item>Ванная комната</item>
-        <item>Город</item>
-        <item>Природа</item>
-        <item>Овощи</item>
-        <item>Фрукты</item>
-        <item>Ягоды</item>
-        <item>Транспорт</item>
-        <item>Инструменты</item>
-        <item>Здание</item>
-        <item>Глаголы</item>
         <item>Водоемы</item>
+        <item>Глаголы</item>
+        <item>Город</item>
+        <item>Дикие животные</item>
+        <item>Домашние животные</item>
+        <item>Здание</item>
+        <item>Инструменты</item>
+        <item>Кухня</item>
+        <item>Овощи</item>
         <item>Погода</item>
+        <item>Природа</item>
+        <item>Семья</item>
+        <item>Спальня</item>
+        <item>Транспорт</item>
+        <item>Фрукты</item>
+        <item>Части тела</item>
+        <item> Ягоды</item>
     </string-array>
 </resources>
