@@ -3,12 +3,16 @@ package com.jkdajac.englishlearning.newwords
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.jkdajac.englishlearning.MainActivity
 import com.jkdajac.englishlearning.R
 import com.jkdajac.englishlearning.newwords.words.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_new_words.*
 
 
@@ -16,7 +20,12 @@ class NewWordsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_new_words)
+        initAdMob2()
 
         val formuls = resources.getStringArray(R.array.names)
         val arrayAdapter = ArrayAdapter(this, R.layout.item_adapter, formuls)
@@ -132,6 +141,30 @@ class NewWordsActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adView2.resume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+    }
+
+    override fun onPause() {
+        super.onPause()
+        adView2.pause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        adView2.destroy()
+    }
+    private fun initAdMob2(){
+        MobileAds.initialize(this)
+        val adRequest2 = AdRequest.Builder().build()
+        adView2.loadAd(adRequest2)
     }
     fun animate(){
         overridePendingTransition(0, R.anim.open_activity)

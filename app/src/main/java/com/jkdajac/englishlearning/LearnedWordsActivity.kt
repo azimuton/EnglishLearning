@@ -3,10 +3,14 @@ package com.jkdajac.englishlearning
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.TextKeyListener.clear
+import android.view.View
+import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.jkdajac.englishlearning.adapters.LearnedWordsAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
@@ -21,7 +25,12 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_learned_words)
+        initAdMob3()
 
         ivBackToMainScreen.setOnClickListener {
             val intent = Intent(this, MainActivity :: class.java)
@@ -43,6 +52,30 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         wordDatabase = AppDatabase.getDatabase(this)
 
         tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adView3.resume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+    }
+
+    override fun onPause() {
+        super.onPause()
+        adView3.pause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        adView3.destroy()
+    }
+    private fun initAdMob3(){
+        MobileAds.initialize(this)
+        val adRequest3 = AdRequest.Builder().build()
+        adView3.loadAd(adRequest3)
     }
 
     override fun onBackPressed() {

@@ -3,11 +3,15 @@ package com.jkdajac.englishlearning
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
@@ -26,7 +30,12 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_main)
+        initAdMob()
 
         ivFoto.setOnClickListener {
             val intent = Intent(this, FotoActivity::class.java)
@@ -103,12 +112,38 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                     startActivity(intent)
                 } else {
                     Toast.makeText(
-                        this, "Заполните все поля!",
+                        this, "Заполните пустые поля!",
                         Toast.LENGTH_LONG
                     ).show()
                 }
             }
+
+
         }
+
+    override fun onResume() {
+        super.onResume()
+        adView.resume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+    }
+
+    override fun onPause() {
+        super.onPause()
+        adView.pause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        adView.destroy()
+    }
+    private fun initAdMob(){
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+    }
 
         fun getData() {
             val wordFromDb: List<Word> = wordDatabase.wordDao().getAll()

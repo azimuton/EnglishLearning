@@ -3,6 +3,8 @@ package com.jkdajac.englishlearning.newwords.words
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.View
+import android.view.Window
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +20,10 @@ class BerryActivity : AppCompatActivity() {
     lateinit var wordDatabase: AppDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_berry)
         wordDatabase = AppDatabase.getDatabase(this)
 
@@ -189,5 +195,12 @@ class BerryActivity : AppCompatActivity() {
         startActivity(intent)
         overridePendingTransition(0, R.anim.open_activity)
         finish()
+    }
+    override fun onResume() {
+        super.onResume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
     }
 }

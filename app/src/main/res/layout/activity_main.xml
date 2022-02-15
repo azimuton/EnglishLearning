@@ -28,10 +28,10 @@
         android:background="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <EditText
         android:id="@+id/etEnglishWord"
@@ -73,12 +73,10 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/etEnglishWord"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/etEnglishWord"
         app:layout_constraintTop_toBottomOf="@+id/etEnglishWord"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -94,23 +92,25 @@
         android:textColor="@android:color/holo_orange_light"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fabNewWords"
         app:layout_constraintStart_toEndOf="@+id/ivFoto"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvWords"
-        android:layout_width="0dp"
+        android:layout_width="364dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/btGoToAllready"
         app:layout_constraintEnd_toEndOf="@+id/btGoToAllready"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btGoToAllready"
-        app:layout_constraintTop_toBottomOf="@+id/btClose" />
+        app:layout_constraintTop_toBottomOf="@+id/btClose"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:id="@+id/btClose"
@@ -153,7 +153,7 @@
         android:id="@+id/btGoToAllready"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="0dp"
         android:backgroundTint="@color/purple_700"
         android:shadowColor="#403636"
         android:shadowRadius="3"
@@ -164,6 +164,7 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -174,8 +175,10 @@
         android:alpha="0.7"
         android:backgroundTint="@color/purple_700"
         android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btSave"
         app:layout_constraintEnd_toEndOf="@+id/etTranslateWord"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -184,10 +187,20 @@
         android:layout_width="63dp"
         android:layout_height="75dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fabNewWords"
+        app:layout_constraintBottom_toBottomOf="@+id/btSave"
         app:layout_constraintStart_toStartOf="@+id/etTranslateWord"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

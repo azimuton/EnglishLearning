@@ -4,6 +4,10 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.Window
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.jkdajac.englishlearning.MainActivity
 import com.jkdajac.englishlearning.R
 import kotlinx.android.synthetic.main.activity_foto.*
@@ -11,7 +15,12 @@ import kotlinx.android.synthetic.main.activity_foto.*
 class FotoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_foto)
+        initAdMob4()
 
         val pages = arrayListOf<Page>(
 
@@ -46,6 +55,31 @@ class FotoActivity : AppCompatActivity() {
 
         vpViewPager.adapter = PagesAdapter(pages,supportFragmentManager)
     }
+    private fun initAdMob4(){
+        MobileAds.initialize(this)
+        val adRequest4 = AdRequest.Builder().build()
+        advertise.loadAd(adRequest4)
+    }
+    override fun onResume() {
+        super.onResume()
+        advertise.resume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+    }
+
+    override fun onPause() {
+        super.onPause()
+        advertise.pause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        advertise.destroy()
+    }
+
+
     override fun onBackPressed() {
         super.onBackPressed()
         val intent = Intent(this, MainActivity :: class.java)
