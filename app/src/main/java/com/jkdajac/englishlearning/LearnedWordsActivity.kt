@@ -2,7 +2,6 @@ package com.jkdajac.englishlearning
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import android.view.View
 import android.view.Window
 import android.widget.Toast
@@ -52,6 +51,21 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         wordDatabase = AppDatabase.getDatabase(this)
 
         tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
+
+        btRandomLearned.setOnClickListener {
+            randomLearned()
+        }
+        ivOpenEyeLearnedRandom.setOnClickListener {
+            tvTRandom.visibility = View.VISIBLE
+        }
+        ivCloseEyeLearnedRandom.setOnClickListener {
+            tvTRandom.visibility = View.GONE
+        }
+        ivTwoDelRandom.setOnClickListener {
+            tvWRandom.text = ""
+            tvTRandom.text = ""
+            tvTRandom.visibility = View.GONE
+        }
     }
 
     override fun onResume() {
@@ -134,5 +148,11 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
                 etTranslateWord.setText(i.getStringExtra(MyIntentConstance.I_TRANSLATE_KEY))
             }
         }
+    }
+    fun randomLearned(){
+        val resultRandom = wordDatabase.learnedwordsDao().randoms().englishWord
+        tvWRandom.text = resultRandom
+        val resultRandom1 = wordDatabase.learnedwordsDao().randoms().translateWord
+        tvTRandom.text = resultRandom1
     }
 }

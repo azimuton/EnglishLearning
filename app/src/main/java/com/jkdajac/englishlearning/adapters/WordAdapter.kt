@@ -54,11 +54,11 @@ class WordAdapter(
 
 
         init {
-            englishWord = itemView.tvWord
-            translateWord = itemView.tvTranslate
+            englishWord = itemView.tvWordRandom
+            translateWord = itemView.tvTranslateRandom
             deleteItem = itemView.ivDelete
-            openItem = itemView.ivOpenEyeLearned
-            closeItem = itemView.ivCloseEyeLearned
+            openItem = itemView.ivOpenEyeLearnedRandom
+            closeItem = itemView.ivCloseEyeLearnedRandom
         }
 
         interface ItemCallback {

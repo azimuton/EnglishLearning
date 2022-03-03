@@ -20,6 +20,6 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity :: class.java))
             overridePendingTransition(0, R.anim.open_activity)
             finish()
-        }, 1200)
+        }, 800)
     }
 }

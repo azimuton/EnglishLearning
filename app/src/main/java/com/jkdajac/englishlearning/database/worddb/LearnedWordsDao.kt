@@ -11,6 +11,9 @@ interface LearnedWordsDao {
     @Query("SELECT  COUNT(DISTINCT id) as count FROM learnedwords")
     fun count(): Int
 
+    @Query("SELECT * FROM learnedwords ORDER BY RANDOM() LIMIT 1")
+    fun randoms() : LearnedWords
+
     @Insert
     fun insertLearnedWords(learnedWords: LearnedWords)
 
@@ -22,5 +25,6 @@ interface LearnedWordsDao {
 
     @Query("SELECT * FROM LearnedWords WHERE id = :id")
     fun getLearnedWordsById(id: Int): LearnedWords?
+
 
 }

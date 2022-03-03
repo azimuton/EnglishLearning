@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/tvWord"
+        android:id="@+id/tvWordRandom"
         style="@style/english"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -20,14 +20,14 @@
         android:shadowColor="@color/white"
         android:shadowRadius="40"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ivOpenEyeLearned"
+        app:layout_constraintEnd_toStartOf="@+id/ivOpenEyeLearnedRandom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/tvTranslate"
+        android:id="@+id/tvTranslateRandom"
         style="@style/translate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -42,35 +42,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvWord"
-        app:layout_constraintTop_toBottomOf="@+id/tvWord"
+        app:layout_constraintStart_toStartOf="@+id/tvWordRandom"
+        app:layout_constraintTop_toBottomOf="@+id/tvWordRandom"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ivCloseEyeLearned"
+        android:id="@+id/ivCloseEyeLearnedRandom"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivTwoDel"
-        app:layout_constraintEnd_toStartOf="@+id/ivTwoDel"
-        app:layout_constraintTop_toTopOf="@+id/ivTwoDel"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTwoDelRandom"
+        app:layout_constraintEnd_toStartOf="@+id/ivTwoDelRandom"
+        app:layout_constraintTop_toTopOf="@+id/ivTwoDelRandom"
         app:srcCompat="@mipmap/closeeyetwo" />
 
     <ImageView
-        android:id="@+id/ivOpenEyeLearned"
+        android:id="@+id/ivOpenEyeLearnedRandom"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivTwoDel"
-        app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearned"
-        app:layout_constraintTop_toTopOf="@+id/ivTwoDel"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTwoDelRandom"
+        app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearnedRandom"
+        app:layout_constraintTop_toTopOf="@+id/ivTwoDelRandom"
         app:srcCompat="@drawable/eyess" />
 
     <ImageView
-        android:id="@+id/ivTwoDel"
+        android:id="@+id/ivTwoDelRandom"
         android:layout_width="40dp"
         android:layout_height="35dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvWord"
+        app:layout_constraintBottom_toBottomOf="@+id/tvWordRandom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvWord"
+        app:layout_constraintTop_toTopOf="@+id/tvWordRandom"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ur" />
 </androidx.constraintlayout.widget.ConstraintLayout>

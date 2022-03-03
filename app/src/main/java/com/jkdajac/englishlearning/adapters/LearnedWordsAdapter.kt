@@ -13,10 +13,10 @@ import com.jkdajac.englishlearning.LearnedWordsActivity
 import com.jkdajac.englishlearning.MyIntentConstance
 import com.jkdajac.englishlearning.R
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
-import kotlinx.android.synthetic.main.item_view.view.ivCloseEyeLearned
-import kotlinx.android.synthetic.main.item_view.view.ivOpenEyeLearned
-import kotlinx.android.synthetic.main.item_view.view.tvTranslate
-import kotlinx.android.synthetic.main.item_view.view.tvWord
+import kotlinx.android.synthetic.main.item_view.view.ivCloseEyeLearnedRandom
+import kotlinx.android.synthetic.main.item_view.view.ivOpenEyeLearnedRandom
+import kotlinx.android.synthetic.main.item_view.view.tvTranslateRandom
+import kotlinx.android.synthetic.main.item_view.view.tvWordRandom
 import kotlinx.android.synthetic.main.learned_item_view.view.*
 
 class LearnedWordsAdapter(
@@ -62,11 +62,11 @@ class LearnedWordsAdapter(
         var closeItem : ImageView? = null
 
         init{
-            englishWord = itemView.tvWord
-            translateWord = itemView.tvTranslate
-            deleteItem = itemView.ivTwoDel
-            openItem = itemView.ivOpenEyeLearned
-            closeItem = itemView.ivCloseEyeLearned
+            englishWord = itemView.tvWordRandom
+            translateWord = itemView.tvTranslateRandom
+            deleteItem = itemView.ivTwoDelRandom
+            openItem = itemView.ivOpenEyeLearnedRandom
+            closeItem = itemView.ivCloseEyeLearnedRandom
         }
         fun setData(item : LearnedWords){
             itemView.setOnClickListener {

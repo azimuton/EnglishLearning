@@ -3,6 +3,7 @@ package com.jkdajac.englishlearning
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.Window
 import android.widget.Toast
@@ -10,8 +11,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.*
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.jkdajac.englishlearning.adapters.WordAdapter
 import com.jkdajac.englishlearning.database.worddb.AppDatabase
 import com.jkdajac.englishlearning.database.worddb.LearnedWords
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     lateinit var wordDatabase: AppDatabase
     lateinit var wordList: ArrayList<Word>
     lateinit var learnedwordList: ArrayList<LearnedWords>
-
+    private var  interAd : InterstitialAd? = null
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         }
 
         fabNewWords.setOnClickListener {
+            showInterAd()
             val intent = Intent(this, NewWordsActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, R.anim.open_activity)
@@ -56,6 +59,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         }
 
         btLearnedWords.setOnClickListener {
+            showInterAd()
             val intent = Intent(this, LearnedWordsActivity :: class.java)
             startActivity(intent)
             overridePendingTransition(0, R.anim.open_activity)
@@ -120,7 +124,6 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
 
 
         }
-
     override fun onResume() {
         super.onResume()
         adView.resume()
@@ -129,12 +132,10 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
     }
-
     override fun onPause() {
         super.onPause()
         adView.pause()
     }
-
     override fun onDestroy() {
         super.onDestroy()
         adView.destroy()
@@ -144,14 +145,53 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
     }
+      fun loadInterAd(){
+        val adRequest = AdRequest.Builder().build()
+        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,
+        object : InterstitialAdLoadCallback(){
+            override fun onAdFailedToLoad(p0: LoadAdError) {
+                interAd = null
+            }
 
+            override fun onAdLoaded(ad: InterstitialAd) {
+                interAd = ad
+            }
+        })
+    }
+
+     fun showInterAd(){
+        if(interAd != null){
+            interAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
+                override fun onAdDismissedFullScreenContent() {
+                    shows()
+                    interAd = null
+                    loadInterAd()
+                }
+
+                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+                    shows()
+                    interAd = null
+                    loadInterAd()
+                }
+
+                override fun onAdShowedFullScreenContent() {
+                    interAd = null
+                    loadInterAd()
+                }
+            }
+            interAd?.show(this)
+        } else {
+            shows()
+        }
+    }
+    fun shows(){
+        Toast.makeText(this, "Межстраничная реклама!", Toast.LENGTH_LONG).show()
+    }
         fun getData() {
             val wordFromDb: List<Word> = wordDatabase.wordDao().getAll()
             wordList.clear()
             wordList.addAll(wordFromDb)
         }
-
-
     @SuppressLint("NotifyDataSetChanged")
     override fun deleteItem(index: Int) {
 
@@ -175,13 +215,10 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             .create()
             .show()
     }
-
     override fun openItem(index: Int) {
     }
-
     override fun closeItem(index: Int) {
     }
-
     fun getMyIntents(){
 
         val i = intent
