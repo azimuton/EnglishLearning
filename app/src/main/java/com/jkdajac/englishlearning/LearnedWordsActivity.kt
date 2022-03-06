@@ -104,6 +104,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         val wordFromDb: List<LearnedWords> = wordDatabase.learnedwordsDao().getAllLearnedWords()
         wordList.clear()
         wordList.addAll(wordFromDb)
+
     }
 
     override fun deleteItem(index: Int) {
@@ -150,9 +151,13 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         }
     }
     fun randomLearned(){
-        val resultRandom = wordDatabase.learnedwordsDao().randoms().englishWord
-        tvWRandom.text = resultRandom
-        val resultRandom1 = wordDatabase.learnedwordsDao().randoms().translateWord
-        tvTRandom.text = resultRandom1
+//        getData()
+//        val resultRandomWord = wordList.random()
+//        tvWRandom.text = resultRandomWord.englishWord
+//        tvTRandom.text = resultRandomWord.translateWord
+
+        val resultRandom  = wordDatabase.learnedwordsDao().randoms()
+        tvWRandom.text = resultRandom.englishWord
+        tvTRandom.text = resultRandom.translateWord
     }
 }

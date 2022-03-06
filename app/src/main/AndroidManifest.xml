@@ -4,12 +4,14 @@
     package="com.jkdajac.englishlearning">
 
     <application
+        android:name="com.jkdajac.englishlearning.AppMainState"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_english2"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_english2_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EnglishLearning">
+        android:theme="@style/Theme.EnglishLearning"
+        tools:ignore="MissingClass">
         <activity
             android:name=".foto.FotoActivity"
             android:screenOrientation="portrait"

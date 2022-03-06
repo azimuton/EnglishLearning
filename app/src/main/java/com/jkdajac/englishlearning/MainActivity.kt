@@ -3,14 +3,12 @@ package com.jkdajac.englishlearning
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
@@ -37,6 +35,10 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_main)
+        (application as AppMainState).showAdIfAvailable(this){
+
+        }
+
         initAdMob()
 
         ivFoto.setOnClickListener {
@@ -185,7 +187,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         }
     }
     fun shows(){
-        Toast.makeText(this, "Межстраничная реклама!", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Межстраничная реклама!", Toast.LENGTH_LONG).show()
     }
         fun getData() {
             val wordFromDb: List<Word> = wordDatabase.wordDao().getAll()

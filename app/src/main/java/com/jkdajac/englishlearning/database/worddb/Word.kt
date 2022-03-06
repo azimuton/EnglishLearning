@@ -1,6 +1,5 @@
 package com.jkdajac.englishlearning.database.worddb
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
