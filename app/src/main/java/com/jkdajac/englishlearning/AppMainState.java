@@ -104,7 +104,7 @@ public class AppMainState extends Application implements Application.ActivityLif
     private static class AppOpenAdManager {
 
         private static final String LOG_TAG = "AppOpenAdManager";
-        private static final String AD_UNIT_ID = "ca-app-pub-6476407778763901/3419835294";
+        private static final String AD_UNIT_ID = "ca-app-pub-6476407778763901/9869144797";
 
         private AppOpenAd appOpenAd = null;
         private boolean isLoadingAd = false;

@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     }
       fun loadInterAd(){
         val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(this, "ca-app-pub-6476407778763901/1033173712", adRequest,
+        InterstitialAd.load(this, "ca-app-pub-6476407778763901/5187663756", adRequest,
         object : InterstitialAdLoadCallback(){
             override fun onAdFailedToLoad(p0: LoadAdError) {
                 interAd = null
