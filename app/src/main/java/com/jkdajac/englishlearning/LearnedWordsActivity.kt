@@ -104,6 +104,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         val wordFromDb: List<LearnedWords> = wordDatabase.learnedwordsDao().getAllLearnedWords()
         wordList.clear()
         wordList.addAll(wordFromDb)
+
     }
 
     override fun deleteItem(index: Int) {
@@ -150,13 +151,13 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         }
     }
     fun randomLearned(){
-        if(tvTRandom.text.isNotEmpty() && tvWRandom.text.isNotEmpty()){
-            val resultRandom = wordDatabase.learnedwordsDao().randoms()
-            tvWRandom.text = resultRandom.englishWord
-            tvTRandom.text = resultRandom.translateWord
-        }else{
-            Toast.makeText(this, "Нет слов для отображения!", Toast.LENGTH_SHORT).show()
-        }
+//        getData()
+//        val resultRandomWord = wordList.random()
+//        tvWRandom.text = resultRandomWord.englishWord
+//        tvTRandom.text = resultRandomWord.translateWord
 
+        val resultRandom  = wordDatabase.learnedwordsDao().randoms()
+        tvWRandom.text = resultRandom.englishWord
+        tvTRandom.text = resultRandom.translateWord
     }
 }
