@@ -151,13 +151,12 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         }
     }
     fun randomLearned(){
-//        getData()
-//        val resultRandomWord = wordList.random()
-//        tvWRandom.text = resultRandomWord.englishWord
-//        tvTRandom.text = resultRandomWord.translateWord
-
-        val resultRandom  = wordDatabase.learnedwordsDao().randoms()
-        tvWRandom.text = resultRandom.englishWord
-        tvTRandom.text = resultRandom.translateWord
+        if(tvTRandom.text.isNotEmpty() && tvWRandom.text.isNotEmpty()){
+            val resultRandom = wordDatabase.learnedwordsDao().randoms()
+            tvWRandom.text = resultRandom.englishWord
+            tvTRandom.text = resultRandom.translateWord
+        }else{
+            Toast.makeText(this, "Нет слов для отображения!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
