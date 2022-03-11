@@ -186,6 +186,7 @@
         android:layout_width="63dp"
         android:layout_height="75dp"
         android:layout_marginTop="4dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/btSave"
         app:layout_constraintStart_toStartOf="@+id/etTranslateWord"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
@@ -200,7 +201,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivFoto" />
+        app:layout_constraintTop_toBottomOf="@+id/fabNewWords" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
