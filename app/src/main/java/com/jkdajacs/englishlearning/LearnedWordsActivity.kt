@@ -154,9 +154,8 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         }
     }
     fun randomLearned(){
-
-        if(getData() != null){
-            val resultRandom = wordDatabase.learnedwordsDao().randoms()
+        val resultRandom = wordDatabase.learnedwordsDao().randoms()
+        if(resultRandom != null){
             tvWRandom.text = resultRandom.englishWord
             tvTRandom.text = resultRandom.translateWord
         } else{
@@ -165,10 +164,12 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
     }
 
     fun changeLanguage() {
-        ivChangeLanguage.setOnClickListener {
-            val resultRandom = wordDatabase.learnedwordsDao().randoms()
+        val resultRandom = wordDatabase.learnedwordsDao().randoms()
+        if(resultRandom != null){
             tvWRandom.text = resultRandom.translateWord
             tvTRandom.text = resultRandom.englishWord
+        } else{
+            Toast.makeText(this, "Нет слов для отображения!", Toast.LENGTH_SHORT).show()
         }
     }
 }
