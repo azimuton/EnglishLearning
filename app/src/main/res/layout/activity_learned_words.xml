@@ -170,6 +170,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ur" />
+
+            <ImageView
+                android:id="@+id/ivChangeLanguage"
+                android:layout_width="35dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivOpenEyeLearnedRandom"
+                app:layout_constraintEnd_toEndOf="@+id/tvWRandom"
+                app:layout_constraintTop_toTopOf="@+id/ivOpenEyeLearnedRandom"
+                app:srcCompat="@drawable/ic_baseline_swap_vert_24" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button

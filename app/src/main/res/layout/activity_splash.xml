@@ -8,40 +8,58 @@
     tools:context=".SplashActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvSplashE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dserasercyr1"
         android:text="English"
         android:textColor="@color/black"
-        android:textSize="85sp"
+        android:textSize="70sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvSplashW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="words"
         android:textColor="#781414"
-        android:textSize="48sp"
+        android:textSize="40sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tvSplashE"
+        app:layout_constraintStart_toStartOf="@+id/tvSplashE"
+        app:layout_constraintTop_toBottomOf="@+id/tvSplashE" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivSplash"
         android:layout_width="204dp"
         android:layout_height="247dp"
         android:layout_marginTop="176dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tvSplashE"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/tvSplashE"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dhdrr" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:progressTint="#070707"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSplashW" />
 </androidx.constraintlayout.widget.ConstraintLayout>
