@@ -24,7 +24,7 @@ class NewWordsActivity : AppCompatActivity() {
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_new_words)
-        initAdMob2()
+        //initAdMob2()
 
         val formuls = resources.getStringArray(R.array.names)
         val arrayAdapter = ArrayAdapter(this, R.layout.item_adapter, formuls)
@@ -144,7 +144,7 @@ class NewWordsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        adView2.resume()
+        //adView2.resume()
         val  w : Window = window
         w.decorView.setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
@@ -153,12 +153,12 @@ class NewWordsActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        adView2.pause()
+        //adView2.pause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        adView2.destroy()
+        //adView2.destroy()
     }
     private fun initAdMob2(){
         MobileAds.initialize(this)

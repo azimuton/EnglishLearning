@@ -20,7 +20,7 @@ class FotoActivity : AppCompatActivity() {
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_foto)
-        initAdMob4()
+        //initAdMob4()
 
         val pages = arrayListOf<Page>(
 
@@ -62,7 +62,7 @@ class FotoActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        advertise.resume()
+        //advertise.resume()
         val  w : Window = window
         w.decorView.setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
@@ -71,12 +71,12 @@ class FotoActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        advertise.pause()
+        //advertise.pause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        advertise.destroy()
+        //advertise.destroy()
     }
 
 

@@ -29,7 +29,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_learned_words)
-        initAdMob3()
+        //initAdMob3()
 
         ivBackToMainScreen.setOnClickListener {
             val intent = Intent(this, MainActivity :: class.java)
@@ -73,7 +73,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
     override fun onResume() {
         super.onResume()
-        adView3.resume()
+        //adView3.resume()
         val  w : Window = window
         w.decorView.setSystemUiVisibility(
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
@@ -82,17 +82,17 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
     override fun onPause() {
         super.onPause()
-        adView3.pause()
+        //adView3.pause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        adView3.destroy()
+        //adView3.destroy()
     }
     private fun initAdMob3(){
         MobileAds.initialize(this)
         val adRequest3 = AdRequest.Builder().build()
-        adView3.loadAd(adRequest3)
+       // adView3.loadAd(adRequest3)
     }
 
     override fun onBackPressed() {

@@ -23,9 +23,9 @@ class NatureActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nature)
         wordDatabase = AppDatabase.getDatabase(this)
 
-        ivNature.setOnClickListener {
-            val english : String = nature.text.toString()
-            val translate : String = tvNature.text.toString()
+        ivF2.setOnClickListener {
+            val english : String = tvE1.text.toString()
+            val translate : String = tvT2.text.toString()
             val word = Word(englishWord = english, translateWord = translate)
             wordDatabase.wordDao().insertWord(word)
             Toast.makeText(this, "Запись скопирована!", Toast.LENGTH_SHORT).show()

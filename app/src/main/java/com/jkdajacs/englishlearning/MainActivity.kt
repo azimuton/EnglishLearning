@@ -9,15 +9,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.gms.ads.*
-import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.jkdajacs.englishlearning.adapters.WordAdapter
 import com.jkdajacs.englishlearning.database.worddb.AppDatabase
 import com.jkdajacs.englishlearning.database.worddb.LearnedWords
 import com.jkdajacs.englishlearning.database.worddb.Word
 import com.jkdajacs.englishlearning.foto.FotoActivity
 import com.jkdajacs.englishlearning.newwords.NewWordsActivity
+import com.jkdajacs.englishlearning.newwords.frasalverbs.FrasalVerbsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     lateinit var wordDatabase: AppDatabase
     lateinit var wordList: ArrayList<Word>
     lateinit var learnedwordList: ArrayList<LearnedWords>
-    private var  interAd : InterstitialAd? = null
+    //private var  interAd : InterstitialAd? = null
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +39,14 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
 //
 //        }
 
-        initAdMob()
+        //initAdMob()
+
+        btAddFrasal.setOnClickListener {
+            val intent = Intent(this, FrasalVerbsActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
+        }
 
         ivFoto.setOnClickListener {
             val intent = Intent(this, FotoActivity::class.java)
@@ -48,8 +55,8 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             finish()
         }
 
-        fabNewWords.setOnClickListener {
-            showInterAd()
+        btAddWords.setOnClickListener {
+            //showInterAd()
             val intent = Intent(this, NewWordsActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, R.anim.open_activity)
@@ -61,7 +68,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         }
 
         btLearnedWords.setOnClickListener {
-            showInterAd()
+           // showInterAd()
             val intent = Intent(this, LearnedWordsActivity :: class.java)
             startActivity(intent)
             overridePendingTransition(0, R.anim.open_activity)
@@ -147,48 +154,48 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
     }
-      fun loadInterAd(){
-        val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,
-        object : InterstitialAdLoadCallback(){
-            override fun onAdFailedToLoad(p0: LoadAdError) {
-                interAd = null
-            }
+//      fun loadInterAd(){
+//        val adRequest = AdRequest.Builder().build()
+//        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest,
+//        object : InterstitialAdLoadCallback(){
+//            override fun onAdFailedToLoad(p0: LoadAdError) {
+//                interAd = null
+//            }
+//
+//            override fun onAdLoaded(ad: InterstitialAd) {
+//                interAd = ad
+//            }
+//        })
+//    }
 
-            override fun onAdLoaded(ad: InterstitialAd) {
-                interAd = ad
-            }
-        })
-    }
-
-     fun showInterAd(){
-        if(interAd != null){
-            interAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
-                override fun onAdDismissedFullScreenContent() {
-                    shows()
-                    interAd = null
-                    loadInterAd()
-                }
-
-                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
-                    shows()
-                    interAd = null
-                    loadInterAd()
-                }
-
-                override fun onAdShowedFullScreenContent() {
-                    interAd = null
-                    loadInterAd()
-                }
-            }
-            interAd?.show(this)
-        } else {
-            shows()
-        }
-    }
-    fun shows(){
-        //Toast.makeText(this, "Межстраничная реклама!", Toast.LENGTH_LONG).show()
-    }
+//     fun showInterAd(){
+//        if(interAd != null){
+//            interAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
+//                override fun onAdDismissedFullScreenContent() {
+//                    shows()
+//                    interAd = null
+//                    loadInterAd()
+//                }
+//
+//                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+//                    shows()
+//                    interAd = null
+//                    loadInterAd()
+//                }
+//
+//                override fun onAdShowedFullScreenContent() {
+//                    interAd = null
+//                    loadInterAd()
+//                }
+//            }
+//            interAd?.show(this)
+//        } else {
+//            shows()
+//        }
+//    }
+//    fun shows(){
+//        //Toast.makeText(this, "Межстраничная реклама!", Toast.LENGTH_LONG).show()
+//    }
         fun getData() {
             val wordFromDb: List<Word> = wordDatabase.wordDao().getAll()
             wordList.clear()

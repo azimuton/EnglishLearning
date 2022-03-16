@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <EditText
         android:id="@+id/etEnglishWord"
@@ -92,23 +92,23 @@
         android:textColor="@android:color/holo_orange_light"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/fabNewWords"
-        app:layout_constraintStart_toEndOf="@+id/ivFoto"
+        app:layout_constraintEnd_toStartOf="@+id/btAddWords"
+        app:layout_constraintStart_toEndOf="@+id/btAddFrasal"
         app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvWords"
-        android:layout_width="364dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/btGoToAllready"
         app:layout_constraintEnd_toEndOf="@+id/btGoToAllready"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btGoToAllready"
         app:layout_constraintTop_toBottomOf="@+id/btClose"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -163,23 +163,8 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/view" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabNewWords"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:alpha="0.7"
-        android:backgroundTint="@color/purple_700"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/btSave"
-        app:layout_constraintEnd_toEndOf="@+id/etTranslateWord"
-        app:layout_constraintTop_toBottomOf="@+id/etTranslateWord"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/ivFoto"
@@ -196,12 +181,38 @@
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544~3347511713"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fabNewWords" />
+        app:layout_constraintTop_toBottomOf="@+id/btSave"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544~3347511713"/>
+
+    <Button
+        android:id="@+id/btAddFrasal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:text="+ Фразы"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etTranslateWord"
+        app:layout_constraintTop_toBottomOf="@+id/etTranslateWord" />
+
+    <Button
+        android:id="@+id/btAddWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:text="+ Слова"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etTranslateWord"
+        app:layout_constraintTop_toBottomOf="@+id/etTranslateWord" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

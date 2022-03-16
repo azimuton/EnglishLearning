@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jkdajacs.englishlearning">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.jkdajacs.englishlearning.AppMainState"
+        android:name=".AppMainState"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_englishwords"
         android:label="@string/app_name"
@@ -14,75 +15,102 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:ignore="MissingClass">
         <activity
-            android:name=".foto.FotoActivity"
+            android:name=".newwords.frasalverbs.FrasalVerbsActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
+            android:name=".foto.FotoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".newwords.words.WeatherActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.SeaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.BerryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.VerbsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.BuildingActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.ToolsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.TransportActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.FruitsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.VegetablesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.NatureActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.CityActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.WashRoomActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.BedRoomActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.KitchenActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.PartsOfBodyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.WildAnimalsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.HomeAnimalsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.words.FamilyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".newwords.NewWordsActivity"
-            android:exported="false" />
-        <activity android:name=".SplashActivity"
-            android:exported="true">
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LearnedWordsActivity" />
+        <activity
+            android:name=".LearnedWordsActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -91,7 +119,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3940256099942544~3347511713" />
     </application>
 
 </manifest>
