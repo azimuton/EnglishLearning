@@ -15,9 +15,13 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:ignore="MissingClass">
         <activity
-            android:name=".newwords.frasalverbs.FrasalVerbsActivity"
+            android:name=".WriteWordActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
+        <activity
+            android:name=".newwords.frasalverbs.FrasalVerbsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".foto.FotoActivity"
             android:exported="false"

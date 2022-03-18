@@ -17,10 +17,11 @@ class Word(
 @Entity(tableName = "learnedwords")
 class LearnedWords(
     val englishWord: String,
-    val translateWord: String
+    var translateWord: String
 )
 
 {
+
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
 }

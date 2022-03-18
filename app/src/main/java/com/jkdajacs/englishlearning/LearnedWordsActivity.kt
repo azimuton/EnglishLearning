@@ -52,6 +52,13 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
         tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
 
+        btWriteWord.setOnClickListener {
+            val intent = Intent(this, WriteWordActivity :: class.java)
+            startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
+        }
+
         btRandomLearned.setOnClickListener {
             randomLearned()
         }
