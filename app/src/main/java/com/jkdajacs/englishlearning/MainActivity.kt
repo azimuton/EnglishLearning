@@ -1,11 +1,17 @@
 package com.jkdajacs.englishlearning
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.view.KeyEvent
 import android.view.View
 import android.view.Window
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,6 +33,7 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
     lateinit var learnedwordList: ArrayList<LearnedWords>
     //private var  interAd : InterstitialAd? = null
 
+    @RequiresApi(Build.VERSION_CODES.R)
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -130,9 +137,14 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
                     ).show()
                 }
             }
-
-
+        ivEngWordClear.setOnClickListener {
+            etEnglishWord.text.clear()
         }
+        ivTransWordClear.setOnClickListener {
+            etTranslateWord.text.clear()
+        }
+        }
+
     override fun onResume() {
         super.onResume()
         adView.resume()

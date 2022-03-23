@@ -83,6 +83,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etWriteEnglish" />
@@ -117,6 +118,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/etWriteEnglish"
         app:layout_constraintEnd_toEndOf="@+id/etWriteEnglish"
         app:layout_constraintTop_toTopOf="@+id/etWriteEnglish"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@drawable/ic_baseline_close_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
