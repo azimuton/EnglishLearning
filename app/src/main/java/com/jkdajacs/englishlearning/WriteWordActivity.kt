@@ -1,7 +1,5 @@
 package com.jkdajacs.englishlearning
 
-import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -31,33 +29,46 @@ class WriteWordActivity : AppCompatActivity() {
         wordDatabase = AppDatabase.getDatabase(this)
 
         btWriteNewWord.setOnClickListener {
-            ivWriteRed.visibility = View.GONE
-            ivWriteGreen.visibility = View.GONE
-            resultRandom = wordDatabase.learnedwordsDao().randoms()
-            tvWriteTranslate.text = resultRandom.translateWord
+            if(wordDatabase.learnedwordsDao().count() != 0){
+                ivWriteRed.visibility = View.GONE
+                ivWriteGreen.visibility = View.GONE
+                resultRandom = wordDatabase.learnedwordsDao().randoms()
+                tvWriteTranslate.text = resultRandom.translateWord
+            } else {
+                Toast.makeText(this, "Нет ни одного выученного слова!", Toast.LENGTH_SHORT).show()
+            }
         }
         btWriteVerify.setOnClickListener {
-            val  w : Window = window
-            w.decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
-                        or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
-            if(etWriteEnglish.text.isNotEmpty()){
-                if(resultRandom.englishWord.equals(etWriteEnglish.text.toString(), true) ){
-                    ivWriteRed.visibility = View.GONE
-                    ivWriteGreen.visibility = View.VISIBLE
-                    val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-                    imm.hideSoftInputFromWindow(etWriteEnglish.windowToken, 0)
-                    Toast.makeText(this, "Правильно!", Toast.LENGTH_SHORT).show()
-                } else{
-                    ivWriteGreen.visibility = View.GONE
-                    ivWriteRed.visibility = View.VISIBLE
-                    val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-                    imm.hideSoftInputFromWindow(etWriteEnglish.windowToken, 0)
-                    Toast.makeText(this, "Неправильно!", Toast.LENGTH_SHORT).show()
-                }
-            } else {
-                Toast.makeText(this, "Не забудьте написать слово!", Toast.LENGTH_SHORT).show()
-            }
+           if(wordDatabase.learnedwordsDao().count() != 0){
+               val  w : Window = window
+               w.decorView.setSystemUiVisibility(
+                   View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                           or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
+               if(tvWriteTranslate.text != ""){
+                   if(etWriteEnglish.text.isNotEmpty()){
+                       if(resultRandom.englishWord.equals(etWriteEnglish.text.toString(), true) ){
+                           ivWriteRed.visibility = View.GONE
+                           ivWriteGreen.visibility = View.VISIBLE
+                           val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                           imm.hideSoftInputFromWindow(etWriteEnglish.windowToken, 0)
+                           Toast.makeText(this, "Правильно!", Toast.LENGTH_SHORT).show()
+                       } else{
+                           ivWriteGreen.visibility = View.GONE
+                           ivWriteRed.visibility = View.VISIBLE
+                           val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                           imm.hideSoftInputFromWindow(etWriteEnglish.windowToken, 0)
+                           Toast.makeText(this, "Неправильно!", Toast.LENGTH_SHORT).show()
+                       }
+                   } else {
+                       Toast.makeText(this, "Не забудьте написать слово!", Toast.LENGTH_SHORT).show()
+                   }
+               }else{
+                   Toast.makeText(this, "Выберите новое слово для проверки!", Toast.LENGTH_SHORT).show()
+               }
+
+           }else {
+               Toast.makeText(this, "Нет ни одного выученного слова!", Toast.LENGTH_SHORT).show()
+           }
         }
         ivWriteClear.setOnClickListener {
             etWriteEnglish.text.clear()

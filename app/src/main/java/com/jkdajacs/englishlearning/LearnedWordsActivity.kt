@@ -162,7 +162,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
     }
     fun randomLearned(){
         val resultRandom = wordDatabase.learnedwordsDao().randoms()
-        if(resultRandom != null){
+        if(wordDatabase.learnedwordsDao().count() != 0){
             tvWRandom.text = resultRandom.englishWord
             tvTRandom.text = resultRandom.translateWord
         } else{
@@ -172,7 +172,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
     fun changeLanguage() {
         val resultRandom = wordDatabase.learnedwordsDao().randoms()
-        if(resultRandom != null){
+        if(wordDatabase.learnedwordsDao().count() != 0){
             tvWRandom.text = resultRandom.translateWord
             tvTRandom.text = resultRandom.englishWord
         } else{
