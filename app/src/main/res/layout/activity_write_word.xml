@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/one"
+    android:background="@drawable/circle_new_two"
     tools:context=".WriteWordActivity">
 
     <Button
@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#FDDF8A"
+        android:backgroundTint="@color/buttons"
         android:shadowColor="@color/black"
         android:shadowRadius="3"
         android:text="выбрать новое слово для проверки"
@@ -60,7 +60,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
-        android:background="@android:drawable/editbox_background_normal"
+        android:background="@drawable/circle_new_three"
         android:ems="10"
         android:hint="Напишите здесь ваш вариант"
         android:inputType="textPersonName"
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#FDDF8A"
+        android:backgroundTint="@color/buttons"
         android:shadowColor="@color/black"
         android:shadowRadius="3"
         android:text="Проверить !"

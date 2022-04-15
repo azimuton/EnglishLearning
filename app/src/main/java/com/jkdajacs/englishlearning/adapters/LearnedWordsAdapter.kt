@@ -26,7 +26,7 @@ class LearnedWordsAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(contextA).inflate(R.layout.learned_item_view, parent, false), contextA)
+        return ViewHolder(LayoutInflater.from(contextA).inflate(R.layout.learned_item_view_new, parent, false), contextA)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import com.jkdajacs.englishlearning.adapters.LearnedWordsAdapter
@@ -30,6 +31,11 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_learned_words)
         //initAdMob3()
+
+        Glide.with(this)
+            .asGif()
+            .load(R.drawable.giphy)
+            .into(ivBackToMainScreen);
 
         ivBackToMainScreen.setOnClickListener {
             val intent = Intent(this, MainActivity :: class.java)

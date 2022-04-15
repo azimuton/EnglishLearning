@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circle_new">
+
+        <TextView
+            android:id="@+id/tvWordRandom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:elevation="30dp"
+            android:padding="4dp"
+            android:shadowColor="#FBFAFA"
+            android:shadowRadius="40"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ivOpenEyeLearnedRandom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvTranslateRandom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="30dp"
+            android:gravity="start|center_vertical"
+            android:padding="4dp"
+            android:shadowColor="#FBFAFA"
+            android:shadowRadius="40"
+            android:textColor="#BEC30C0C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvWordRandom"
+            app:layout_constraintTop_toBottomOf="@+id/tvWordRandom" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ur" />
+
+        <ImageView
+            android:id="@+id/ivCloseEyeLearnedRandom"
+            android:layout_width="43dp"
+            android:layout_height="35dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
+            app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+            app:layout_constraintTop_toTopOf="@+id/ivDelete"
+            app:srcCompat="@mipmap/closeeyetwo" />
+
+        <ImageView
+            android:id="@+id/ivOpenEyeLearnedRandom"
+            android:layout_width="43dp"
+            android:layout_height="35dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCloseEyeLearnedRandom"
+            app:layout_constraintEnd_toStartOf="@+id/ivCloseEyeLearnedRandom"
+            app:layout_constraintTop_toTopOf="@+id/ivCloseEyeLearnedRandom"
+            app:srcCompat="@drawable/eyess" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

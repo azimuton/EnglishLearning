@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="@drawable/circle_new_two"
     tools:context=".newwords.words.WashRoomActivity">
 
     <ScrollView
@@ -477,7 +477,6 @@
                     app:srcCompat="@android:drawable/ic_menu_directions" />
 
             </LinearLayout>
-
 
 
         </LinearLayout>

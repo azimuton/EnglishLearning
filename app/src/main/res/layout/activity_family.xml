@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
+    android:background="@drawable/circle_new_two"
     tools:context=".newwords.words.FamilyActivity">
 
     <ScrollView
@@ -287,28 +287,28 @@
             </LinearLayout>
 
             <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/motherinlaw"
-                style="@style/english"
-                android:text="Mother-In-Law" />
+                <TextView
+                    android:id="@+id/motherinlaw"
+                    style="@style/english"
+                    android:text="Mother-In-Law" />
 
-            <TextView
-                android:id="@+id/tvMotherInLaw"
-                style="@style/translate"
-                android:text="Теща" />
+                <TextView
+                    android:id="@+id/tvMotherInLaw"
+                    style="@style/translate"
+                    android:text="Теща" />
 
-            <ImageView
-                android:id="@+id/ivMotherInLaw"
-                style="@style/image_to_main"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_directions" />
+                <ImageView
+                    android:id="@+id/ivMotherInLaw"
+                    style="@style/image_to_main"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_directions" />
 
-        </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

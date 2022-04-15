@@ -23,7 +23,7 @@ class WordAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(contextA).inflate(R.layout.item_view, parent, false), contextA
+            LayoutInflater.from(contextA).inflate(R.layout.item_view_new, parent, false), contextA
         )
     }
 

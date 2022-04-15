@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBE6A4"
-    tools:context=".newwords.frasalverbs.fragments.PopularExpressionsFragment" >
+    android:background="@drawable/circle_new_two"
+    tools:context=".newwords.frasalverbs.fragments.PopularExpressionsFragment">
 
     <ScrollView
         android:layout_width="match_parent"
