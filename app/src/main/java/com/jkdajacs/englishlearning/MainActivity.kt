@@ -1,15 +1,11 @@
 package com.jkdajacs.englishlearning
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.view.KeyEvent
 import android.view.View
 import android.view.Window
-import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
@@ -18,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import com.jkdajacs.englishlearning.adapters.WordAdapter
+import com.jkdajacs.englishlearning.api.TranslatingActivity
 import com.jkdajacs.englishlearning.database.worddb.AppDatabase
 import com.jkdajacs.englishlearning.database.worddb.LearnedWords
 import com.jkdajacs.englishlearning.database.worddb.Word
@@ -42,11 +39,15 @@ class MainActivity : AppCompatActivity(), WordAdapter.ViewHolder.ItemCallback{
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_main)
-//        (application as AppMainState).showAdIfAvailable(this){
-//
-//        }
 
         //initAdMob()
+
+        btTranslate.setOnClickListener {
+            val intent = Intent(this,TranslatingActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, R.anim.open_activity)
+            finish()
+        }
 
         btAddFrasal.setOnClickListener {
             val intent = Intent(this, FrasalVerbsActivity::class.java)

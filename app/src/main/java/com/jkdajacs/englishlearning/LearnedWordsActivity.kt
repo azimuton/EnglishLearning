@@ -1,5 +1,6 @@
 package com.jkdajacs.englishlearning
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -54,7 +55,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
         rvLernedWords.adapter = adapter
         adapter.submitList(wordList)
 
-        wordDatabase = AppDatabase.getDatabase(this)
+        //wordDatabase = AppDatabase.getDatabase(this)
 
         tvCountLearned.text = wordDatabase.learnedwordsDao().count().toString()
 
@@ -123,6 +124,7 @@ class LearnedWordsActivity : AppCompatActivity(), LearnedWordsAdapter.ViewHolder
 
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun deleteItem(index: Int) {
 
         val addDialog = AlertDialog.Builder(this)

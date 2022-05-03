@@ -57,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvWordRandom" />
 
         <ImageView
-            android:id="@+id/ivDelete"
+            android:id="@+id/ivLearnedDelete"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginTop="4dp"
@@ -72,8 +72,8 @@
             android:layout_width="43dp"
             android:layout_height="35dp"
             android:elevation="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
-            app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLearnedDelete"
+            app:layout_constraintEnd_toStartOf="@+id/ivLearnedDelete"
             app:layout_constraintTop_toTopOf="@+id/ivDelete"
             app:srcCompat="@mipmap/closeeyetwo" />
 

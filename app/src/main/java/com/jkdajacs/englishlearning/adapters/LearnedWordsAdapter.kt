@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.item_view.view.ivOpenEyeLearnedRandom
 import kotlinx.android.synthetic.main.item_view.view.tvTranslateRandom
 import kotlinx.android.synthetic.main.item_view.view.tvWordRandom
 import kotlinx.android.synthetic.main.learned_item_view.view.*
+import kotlinx.android.synthetic.main.learned_item_view_new.view.*
 
 class LearnedWordsAdapter(
     val contextA: Context,
@@ -64,7 +65,7 @@ class LearnedWordsAdapter(
         init{
             englishWord = itemView.tvWordRandom
             translateWord = itemView.tvTranslateRandom
-            deleteItem = itemView.ivTwoDelRandom
+            deleteItem = itemView.ivLearnedDelete
             openItem = itemView.ivOpenEyeLearnedRandom
             closeItem = itemView.ivCloseEyeLearnedRandom
         }

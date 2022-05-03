@@ -7,4 +7,134 @@
     android:background="@drawable/circle_new_two"
     tools:context=".api.TranslatingActivity">
 
+    <TextView
+        android:id="@+id/tvGetTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#BEC30C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterWord"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/etEnterWord"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterWord" />
+
+    <Button
+        android:id="@+id/btToTranslate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/buttons"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:text="Перевести !"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterWord"
+        app:layout_constraintStart_toStartOf="@+id/etEnterWord"
+        app:layout_constraintTop_toBottomOf="@+id/tvGetTranslate" />
+
+    <EditText
+        android:id="@+id/etEnterWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_new_three"
+        android:ems="10"
+        android:hint="Напишите здесь ваш текст "
+        android:inputType="textMultiLine|textPersonName"
+        android:padding="8dp"
+        android:paddingEnd="30dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btSaveTranslate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/buttons"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:text="Сохранить !"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/btToTranslate"
+        app:layout_constraintStart_toStartOf="@+id/btToTranslate"
+        app:layout_constraintTop_toBottomOf="@+id/btToTranslate" />
+
+    <ImageView
+        android:id="@+id/ivDeleteEnterWordTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterWord"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterWord"
+        app:layout_constraintTop_toTopOf="@+id/etEnterWord"
+        app:srcCompat="@drawable/ic_baseline_close_244" />
+
+    <ImageView
+        android:id="@+id/ivBackTranslatingActivity"
+        android:layout_width="82dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giphy" />
+
+    <TextView
+        android:id="@+id/tvEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/etEnterWord"
+        app:layout_constraintStart_toStartOf="@+id/etEnterWord" />
+
+    <TextView
+        android:id="@+id/tvRuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Русский"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/etEnterWord"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterWord" />
+
+    <Button
+        android:id="@+id/btChangeLanguageTranslate"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/buttons"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_baseline_compare_arrows_24"
+        app:iconSize="40dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEnterWord"
+        app:layout_constraintEnd_toStartOf="@+id/tvRuss"
+        app:layout_constraintStart_toEndOf="@+id/tvEng"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
