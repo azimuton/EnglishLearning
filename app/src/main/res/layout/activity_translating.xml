@@ -137,4 +137,17 @@
         app:layout_constraintStart_toEndOf="@+id/tvEng"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/tvAlarmMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FA0303"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/etEnterWord"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/etEnterWord"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterWord" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

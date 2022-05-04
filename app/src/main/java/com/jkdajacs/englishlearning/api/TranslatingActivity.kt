@@ -1,5 +1,6 @@
 package com.jkdajacs.englishlearning.api
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -48,6 +49,9 @@ class TranslatingActivity : AppCompatActivity() {
         ivDeleteEnterWordTranslate.setOnClickListener {
             etEnterWord.text.clear()
             tvGetTranslate.text = ""
+            tvAlarmMessage.text = ""
+            btSaveTranslate.isEnabled = true
+            btSaveTranslate.alpha = 1f
             val  w : Window = window
             w.decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
@@ -104,6 +108,7 @@ class TranslatingActivity : AppCompatActivity() {
         finish()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun prepareLangTransMode() {
         val options = TranslatorOptions.Builder()
             .setSourceLanguage(TranslateLanguage.RUSSIAN)
@@ -118,6 +123,7 @@ class TranslatingActivity : AppCompatActivity() {
                tvGetTranslate.text = "Error: ${exception.message}"
             }
     }
+    @SuppressLint("SetTextI18n")
     private fun prepareLangTransMode2() {
         val options = TranslatorOptions.Builder()
             .setSourceLanguage(TranslateLanguage.ENGLISH)
@@ -128,23 +134,43 @@ class TranslatingActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 translateWord2()
             }
-            .addOnFailureListener { exception ->
+            .addOnFailureListener {exception ->
                 tvGetTranslate.text = "Error: ${exception.message}"
             }
     }
+    @SuppressLint("SetTextI18n")
     private fun translateWord() {
         russianEnglishTranslator.translate(text)
             .addOnSuccessListener { translatedText ->
                 tvGetTranslate.text = translatedText
+                if(tvGetTranslate.text == text){
+                    tvAlarmMessage.text = "В данном языке нет такого слова!"
+                    btSaveTranslate.isEnabled = false
+                    btSaveTranslate.alpha = 0.5f
+                } else {
+                    tvAlarmMessage.text = ""
+                    btSaveTranslate.isEnabled = true
+                    btSaveTranslate.alpha = 1f
+                }
             }
             .addOnFailureListener { exception ->
                 tvGetTranslate.text = "Error: ${exception.message}"
             }
     }
+    @SuppressLint("SetTextI18n")
     private fun translateWord2() {
         englishRussianTranslator.translate(text)
             .addOnSuccessListener { translatedText ->
                 tvGetTranslate.text = translatedText
+                if(tvGetTranslate.text == text){
+                    tvAlarmMessage.text = "There is no such word in this language!"
+                    btSaveTranslate.isEnabled = false
+                    btSaveTranslate.alpha = 0.5f
+                } else {
+                    tvAlarmMessage.text = ""
+                    btSaveTranslate.isEnabled = true
+                    btSaveTranslate.alpha = 1f
+                }
             }
             .addOnFailureListener { exception ->
                 tvGetTranslate.text = "Error: ${exception.message}"
